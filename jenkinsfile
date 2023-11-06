@@ -1,0 +1,16 @@
+pipeline {
+  agent { label 'oracle-amd-agent-2' }
+  tools {
+        maven 'Default MVN'
+    }
+    stages {
+
+      stage('Build and Test') {
+        steps {
+             // Use 'bat' for Windows command execution
+            sh 'mvn clean test'
+        }
+    }
+
+    }
+}
