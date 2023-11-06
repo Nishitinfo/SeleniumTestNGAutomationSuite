@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="All Test Suite" parallel="classes">
+    <listeners>
+        <listener class-name="basicTemplate.listener">
+        </listener>
+    </listeners>
+<!--    <test name="Parallel Tests using edge" parallel="classes">-->
+<!--        <parameter name="browser" value="edge"/>-->
+<!--        <classes>-->
+<!--            <class name="basicTemplate.pages.homePage"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+    <test name="Parallel Tests using chrome" parallel="classes">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="basicTemplate.pages.homePage"/>
+        </classes>
+    </test>
+
+    <test name="Parallel Tests using edge" parallel="classes">
+        <parameter name="browser" value="edge"/>
+        <classes>
+            <class name="runner.TestRunner"/>
+        </classes>
+    </test>
+<!--    <test name="Parallel Tests using firefox" parallel="classes">-->
+<!--        <parameter name="browser" value="firefox"/>-->
+<!--        <classes>-->
+<!--            <class name="basicTemplate.pages.homePage"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="Parallel Tests using safari" parallel="classes">-->
+<!--        <parameter name="browser" value="safari"/>-->
+<!--        <classes>-->
+<!--            <class name="basicTemplate.pages.homePage"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+</suite>
