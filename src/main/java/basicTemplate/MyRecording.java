@@ -1,23 +1,23 @@
-package org.example;
+package basicTemplate;
 
-import java.awt.AWTException;
-import java.awt.Dimension;
-import java.awt.GraphicsConfiguration;
-import java.awt.GraphicsEnvironment;
-import java.awt.Rectangle;
-import java.awt.Toolkit;
+import org.monte.media.Format;
+import org.monte.media.Registry;
+import org.monte.media.math.Rational;
+import org.monte.screenrecorder.ScreenRecorder;
+
+import java.awt.*;
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-import org.monte.media.Format;
-import org.monte.media.FormatKeys.MediaType;
-import org.monte.media.Registry;
-import org.monte.media.math.Rational;
-import org.monte.screenrecorder.ScreenRecorder;
-
-import static org.monte.media.AudioFormatKeys.*;
+import static org.monte.media.AudioFormatKeys.EncodingKey;
+import static org.monte.media.AudioFormatKeys.FrameRateKey;
+import static org.monte.media.AudioFormatKeys.KeyFrameIntervalKey;
+import static org.monte.media.AudioFormatKeys.MIME_AVI;
+import static org.monte.media.AudioFormatKeys.MediaType;
+import static org.monte.media.AudioFormatKeys.MediaTypeKey;
+import static org.monte.media.AudioFormatKeys.MimeTypeKey;
 import static org.monte.media.VideoFormatKeys.*;
 
 public class MyRecording extends ScreenRecorder {
@@ -25,24 +25,10 @@ public class MyRecording extends ScreenRecorder {
     public String name;
 
     public MyRecording(GraphicsConfiguration cfg, Rectangle captureArea, Format fileFormat,
-                            Format screenFormat, Format mouseFormat, Format audioFormat, File movieFolder)
+                       Format screenFormat, Format mouseFormat, Format audioFormat, File movieFolder)
             throws IOException, AWTException {
         super(cfg, captureArea, fileFormat, screenFormat, mouseFormat, audioFormat, movieFolder);
         this.name = name;
-
-    }
-
-    @Override
-    protected File createMovieFile(Format fileFormat) throws IOException {
-
-        if (!movieFolder.exists()) {
-            movieFolder.mkdirs();
-        } else if (!movieFolder.isDirectory()) {
-            throw new IOException("\"" + movieFolder + "\" is not a directory.");
-        }
-        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss");
-        return new File(movieFolder,
-                "recording" + "-" + dateFormat.format(new Date()) + "." + Registry.getInstance().getExtension(fileFormat));
 
     }
 
@@ -74,6 +60,20 @@ public class MyRecording extends ScreenRecorder {
 
     public static void stopRecording() throws Exception {
         screenRecorder.stop();
+    }
+
+    @Override
+    protected File createMovieFile(Format fileFormat) throws IOException {
+
+        if (!movieFolder.exists()) {
+            movieFolder.mkdirs();
+        } else if (!movieFolder.isDirectory()) {
+            throw new IOException("\"" + movieFolder + "\" is not a directory.");
+        }
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss");
+        return new File(movieFolder,
+                "recording" + "-" + dateFormat.format(new Date()) + "." + Registry.getInstance().getExtension(fileFormat));
+
     }
 
 }

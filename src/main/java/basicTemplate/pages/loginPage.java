@@ -4,19 +4,22 @@ package basicTemplate.pages;
 import basicTemplate.browserSelector;
 import basicTemplate.utils;
 import org.openqa.selenium.By;
-import org.testng.annotations.*;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
 
 
-public class homePage extends utils {
+public class loginPage extends utils {
 
 
-    public By searchbar = new By.ByXPath("//textarea[@id='APjFqb' and @class='gLFyf']");
+    public By username = new By.ByXPath("//input[@id='Username']");
 
-    public By searchBox = new By.ByXPath("//textarea[@id='APjFqb' and @class='gLFyf']");
+    public By password = new By.ByXPath("//input[@id='Password']");
 
-    public By dropdown = new By.ByXPath("//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div[1]/div[2]/form/div[1]/div/div[2]/div/div[2]/div/div[1]");
+    public By SignInButton = new By.ByXPath("//button[@name='button']");
 
-    public By DropdownOptions = new By.ByXPath("//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div[1]/div[2]/form/div[1]/div/div[2]/div/div[2]/div");
+    public By UserIcon = new By.ByXPath("//span[@class='menu_user_title']");
 
 
     @Parameters("browser")
@@ -31,9 +34,12 @@ public class homePage extends utils {
     }
 
     @Test
-    public void verifyHomePage() {
-        clickOnElement(searchbar);
-        clickOnElement(searchBox);
+    public void enterDetailsInLoginPage() {
+        clickOnElement(username);
+        enterText(username, "admin");
+        clickOnElement(password);
+        enterText(password, "admin");
+        clickOnElement(SignInButton);
 
     }
 
