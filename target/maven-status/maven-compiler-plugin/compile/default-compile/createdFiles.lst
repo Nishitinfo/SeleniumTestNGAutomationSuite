@@ -1,0 +1,10 @@
+basicTemplate\baseClass.class
+basicTemplate\browserSelector.class
+basicTemplate\ExtentReporterNG.class
+basicTemplate\utils$1.class
+basicTemplate\utils.class
+basicTemplate\listener.class
+basicTemplate\MyRecording.class
+basicTemplate\loadProps.class
+basicTemplate\Recording.class
+basicTemplate\pages\loginPage.class
