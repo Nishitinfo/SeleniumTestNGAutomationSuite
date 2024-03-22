@@ -59,10 +59,6 @@ Test results are documented using Extent Reports, providing detailed insights in
 
 Contributions to enhance the framework's functionality, add new features, or fix issues are welcome. Please fork the repository, make your changes, and submit a pull request.
 
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
 ---
 
 Feel free to customize this README according to your project's specifics. Happy Testing! 🚀
