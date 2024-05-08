@@ -6,25 +6,33 @@
         <listener class-name="basicTemplate.listener">
         </listener>
     </listeners>
-    <test name="Parallel Tests using edge" parallel="classes">
-        <parameter name="browser" value="edge"/>
-        <classes>
-                <class name="basicTemplate.pages.loginPage"/>
-        </classes>
-    </test>
-    <test name="Parallel Tests using chrome" parallel="classes">
+
+
+    <!--    <test name="Parallel Tests using edge" parallel="classes">-->
+    <!--        <parameter name="browser" value="edge"/>-->
+    <!--        <classes>-->
+    <!--                <class name="basicTemplate.pages.loginPage"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+    <!--    <test name="Parallel Tests using chrome" parallel="classes">-->
+    <!--        <parameter name="browser" value="chrome"/>-->
+    <!--        <classes>-->
+    <!--            <class name="basicTemplate.pages.loginPage"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+    <test name="Parallel runner Tests using chrome" parallel="classes">
         <parameter name="browser" value="chrome"/>
         <classes>
-            <class name="basicTemplate.pages.loginPage"/>
+            <class name="runner.testRunner"/>
         </classes>
     </test>
 
-    <test name="Parallel Tests using edge with Runner" parallel="classes">
-        <parameter name="browser" value="edge"/>
-        <classes>
-            <class name="runner.TestRunner"/>
-        </classes>
-    </test>
+<!--    <test name="Parallel Tests using edge with Runner" parallel="classes">-->
+<!--        <parameter name="browser" value="edge"/>-->
+<!--        <classes>-->
+<!--            <class name="runner.testRunner"/>-->
+<!--        </classes>-->
+<!--    </test>-->
 <!--    <test name="Parallel Tests using firefox" parallel="classes">-->
 <!--        <parameter name="browser" value="firefox"/>-->
 <!--        <classes>-->

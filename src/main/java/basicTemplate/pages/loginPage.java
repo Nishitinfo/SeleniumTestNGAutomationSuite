@@ -2,6 +2,7 @@ package basicTemplate.pages;
 
 
 import basicTemplate.browserSelector;
+import basicTemplate.loadProps;
 import basicTemplate.utils;
 import org.openqa.selenium.By;
 import org.testng.annotations.AfterTest;
@@ -12,20 +13,25 @@ import org.testng.annotations.Test;
 
 public class loginPage extends utils {
 
+    public static String U_name = loadProps.getProperty("Username");
 
-    public By username = new By.ByXPath("//input[@id='Username']");
+    public static String P_word = loadProps.getProperty("Password");
+    public static By username = new By.ByXPath("//input[@id='Username']");
 
-    public By password = new By.ByXPath("//input[@id='Password']");
+    public static By password = new By.ByXPath("//input[@id='Password']");
 
-    public By SignInButton = new By.ByXPath("//button[@name='button']");
+    public static By SignInButton = new By.ByXPath("//button[@name='button']");
 
-    public By UserIcon = new By.ByXPath("//span[@class='menu_user_title']");
+    public static By UserIcon = new By.ByXPath("//span[@class='menu_user_title']");
 
+    @Test
+    public static void login() {
+        clickOnElement(username);
+        enterText(username, U_name);
+        clickOnElement(password);
+        enterText(password, P_word);
+        clickOnElement(SignInButton);
 
-    @Parameters("browser")
-    @BeforeTest
-    public void launchBrowser(String Browser) {
-        browserSelector.LaunchBrowser(Browser);
     }
 
     @AfterTest
@@ -33,19 +39,15 @@ public class loginPage extends utils {
         browserSelector.closeBrowser();
     }
 
-    @Test
-    public void enterDetailsInLoginPage() {
-        clickOnElement(username);
-        enterText(username, "admin");
-        clickOnElement(password);
-        enterText(password, "admin");
-        clickOnElement(SignInButton);
-
+    @Parameters("Browser")
+    @BeforeTest
+    public void launchBrowser(String Browser) {
+        browserSelector.LaunchBrowser(Browser);
     }
 
 //    @Test
 //    public void verifyDropdown(){
-//        driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/admin/viewSystemUsers");
+//        driver.get("url");
 //        clickOnElement(dropdown);
 //        WebElement divElement = driver.findElement(DropdownOptions); // Replace "your-div-class-name" with the actual class name
 //        String script = "arguments[0].style.display='block';";

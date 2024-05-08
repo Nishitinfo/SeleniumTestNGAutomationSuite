@@ -5,11 +5,11 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 import java.awt.*;
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileOutputStream;
 import java.io.IOException;
 import java.nio.file.*;
 import java.nio.file.attribute.BasicFileAttributes;
@@ -60,6 +60,7 @@ public class utils extends baseClass {
         DateFormat format = new SimpleDateFormat("ddMMMyyHHmmss");
         return format.format(new Date());
     }
+
 
 
     public static String timeStamp() {
@@ -120,6 +121,19 @@ public class utils extends baseClass {
         String url = driver.getCurrentUrl();
         return url;
     }
+
+    public static void UploadFile(By by, By args) {
+        WebElement addFile = driver.findElement(by);
+        File file = new File("C://Users//Nishit.Sheth//IdeaProjects//MRIEnergy_AutomationSuite//Extent-Report//PdfReport//extentPdf.pdf");
+        addFile.sendKeys(file.getAbsolutePath());
+        if (driver.findElement(args).isDisplayed()) {
+            Assert.assertTrue(true, "Image Uploaded");
+        } else {
+            Assert.fail("Image not Uploaded");
+        }
+
+    }
+
 
     public static void createNewTab() {
         //Open a new tab using Ctrl + t
@@ -312,6 +326,7 @@ public class utils extends baseClass {
         }
 
     }
+
 
     public static String removeLastCharacterOfString(String str) {
         if (str != null && str.length() > 0) {

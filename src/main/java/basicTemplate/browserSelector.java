@@ -13,7 +13,7 @@ import org.testng.annotations.AfterTest;
 import java.util.concurrent.TimeUnit;
 
 public class browserSelector extends baseClass {
-    public static String brows = loadProps.getProperty("browser");
+    public static String brows = loadProps.getProperty("Browser");
     public static String URL = loadProps.getProperty("URL");
 
 //@BeforeTest
@@ -36,7 +36,7 @@ public static void setUp() throws Exception {
             driver.manage().window().maximize();
             driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
             driver.manage().timeouts().pageLoadTimeout(100,TimeUnit.SECONDS);
-            Recording.ScreenCapturing();
+            recording.ScreenCapturing();
 
         } else if (brows.equalsIgnoreCase("edge")) {
             WebDriverManager.edgedriver().setup();
@@ -50,7 +50,7 @@ public static void setUp() throws Exception {
             driver.manage().window().maximize();
             driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
             driver.manage().timeouts().pageLoadTimeout(100,TimeUnit.SECONDS);
-            Recording.ScreenCapturing();
+            recording.ScreenCapturing();
         } else if (brows.equalsIgnoreCase("firefox")) {
             WebDriverManager.firefoxdriver().setup();
             FirefoxOptions options= new FirefoxOptions();
@@ -61,7 +61,7 @@ public static void setUp() throws Exception {
             driver.manage().window().maximize();
             driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
             driver.manage().timeouts().pageLoadTimeout(100,TimeUnit.SECONDS);
-            Recording.ScreenCapturing();
+            recording.ScreenCapturing();
         } else if (brows.equalsIgnoreCase("opera")) {
             WebDriverManager.operadriver().setup();
             driver = new OperaDriver();
@@ -76,7 +76,7 @@ public static void setUp() throws Exception {
 
     @AfterTest
     public static void tearDown() throws Exception {
-        Recording.StopCapturing();
+        recording.StopCapturing();
         driver.close();
         driver.quit();
 
