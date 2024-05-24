@@ -13,10 +13,12 @@ public class extentReporterNG {
 
     public static ExtentReports extentReportGenerator() {
 
-        String path = System.getProperty("user.dir") + "/Reports/ExtentReport/extentReport.html";
+        String path = System.getProperty("user.dir") + "/reports/ExtentReport/extentReport.html";
         ExtentSparkReporter reporter = new ExtentSparkReporter(path);
         reporter.config().setReportName("Web Automation Results");
         reporter.config().setDocumentTitle("Web Test Results");
+        reporter.config().getCss();
+        reporter.config().setCss("{.background-image: url(../../src/test/resources/attachments/mri_energy_logo.png);}");
         extent = new ExtentReports();
         reporter.config().getReporter();
         extent.attachReporter(reporter);
@@ -24,7 +26,7 @@ public class extentReporterNG {
         extent.setSystemInfo("Tester Name ", "Nishit Sheth");
         extent.setSystemInfo("Build No ", "1.0");
         extent.setSystemInfo("os", "Windows");
-        htmlReporter = new ExtentSparkReporter(System.getProperty("user.dir") + "/Reports/SparkReport");
+        htmlReporter = new ExtentSparkReporter(System.getProperty("user.dir") + "/reports/SparkReport");
         extent.attachReporter(htmlReporter);
         htmlReporter.config().setCss("css-string");
         htmlReporter.config().setDocumentTitle("Automation Test Report");

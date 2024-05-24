@@ -1,23 +1,27 @@
+
+
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>MRI Energy Scenario Base Automation Script Extent Report</title>
+<title>Web Test Results</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
 <link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
 <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
-<style type="text/css"></style></head><body class="spa -report standard">
+<style type="text/css">{.background-image: url(../../src/test/resources/attachments/mri_energy_logo.png);}</style></head><body class="spa -report standard">
   <div class="app">
     <div class="layout">
 <div class="header navbar">
 <div class="vheader">
-<div class="nav-left">
-    <a href="#">
-        <img src="../../src/test/resources/attachments/mri_energy_logo.png" height="45"/>
-    </a>
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
 </div>
-<ul class="nav-right">
+<ul class="nav-left">
 <li class="search-box">
 <a class="search-toggle" href="#">
 <i class="search-icon fa fa-search"></i>
@@ -31,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Web Automation Results</span></a>
 </li>
 <li class="m-r-10">
-    <a href="#"><span class="badge badge-primary">May 8, 2024 03:06:15 PM</span></a>
+<a href="#"><span class="badge badge-primary">May 9, 2024 11:21:51 AM</span></a>
 </li>
 </ul>
 </div>
@@ -41,6 +45,11 @@
 <li class="nav-item dropdown" onclick="toggleView('test-view')">
 <a id="nav-test" class="dropdown-toggle" href="#">
 <span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
 </a>
 </li>
 <li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
@@ -62,7 +71,7 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -70,39 +79,69 @@
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="pass" test-id="1"
+        <li class="test-item"  status="fail" test-id="1"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-              <p class="name">runScenario</p>
+            <p class="name">runScenario</p>
             <p class="text-sm">
-                <span>3:06:16 PM</span> / <span>00:00:13:180</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>11:22:51 AM</span> / <span>00:00:02:572</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-    <h5 class="test-status text-pass">runScenario</h5>
-    <span class='badge badge-success'>05.08.2024 3:06:16 PM</span>
-    <span class='badge badge-danger'>05.08.2024 3:06:29 PM</span>
-    <span class='badge badge-default'>00:00:13:180</span>
+<h5 class="test-status text-fail">runScenario</h5>
+<span class='badge badge-success'>05.09.2024 11:22:51 AM</span>
+<span class='badge badge-danger'>05.09.2024 11:22:54 AM</span>
+<span class='badge badge-default'>00:00:02:572</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
 </div>
-</div><div class="detail-body mt-4">
+</div>    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\Users\Nishit.Sheth\IdeaProjects\MRIEnergy_AutomationSuite//Reports//runScenario051302024-112254.png' src="C:\Users\Nishit.Sheth\IdeaProjects\MRIEnergy_AutomationSuite//Reports//runScenario051302024-112254.png">
+    
+    </div></div>
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\Users\Nishit.Sheth\IdeaProjects\MRIEnergy_AutomationSuite//Reports//runScenario051302024-112254.png' src="C:\Users\Nishit.Sheth\IdeaProjects\MRIEnergy_AutomationSuite//Reports//runScenario051302024-112254.png">
+    <div class="title">runScenario</div>
+    </div></div>
+<div class="detail-body mt-4">
 <table class="table table-sm">
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-          <td>3:06:29 PM</td>
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>11:22:54 AM</td>
         <td>
-          Successful
+          <textarea readonly class="code-block">org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=124.0.6367.156)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8aa3c2a88633775ca2da0d5d0d1164a6, get {url=https://uksestdevtest02.ukest.lan/eSight/Identity/Account/Login}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 124.0.6367.156, chrome: {chromedriverVersion: 124.0.6367.155 (df4f029328b..., userDataDir: C:\Users\NISHIT~1.SHE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58261}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58261/devtoo..., se:cdpVersion: 124.0.6367.156, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8aa3c2a88633775ca2da0d5d0d1164a6
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:301)
+	at basicTemplate.browserSelector.setUp(browserSelector.java:34)
+	at stepdef.hooks.before(hooks.java:13)
+</textarea>
+          
         </td>
       </tr>
   </tbody>
@@ -110,79 +149,69 @@
 </div>
           </div>
         </li>
-          <li class="test-item" status="pass" test-id="9"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-              <p class="name">runScenario</p>
-            <p class="text-sm">
-                <span>3:06:29 PM</span> / <span>00:01:22:268</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-    <h5 class="test-status text-pass">runScenario</h5>
-    <span class='badge badge-success'>05.08.2024 3:06:29 PM</span>
-    <span class='badge badge-danger'>05.08.2024 3:07:51 PM</span>
-    <span class='badge badge-default'>00:01:22:268</span>
-    &middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-          <td>3:07:51 PM</td>
-        <td>
-          Successful
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-          <li class="test-item" status="pass" test-id="17"
+        <li class="test-item"  status="fail" test-id="9"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">runScenario</p>
             <p class="text-sm">
-                <span>3:07:51 PM</span> / <span>00:00:35:038</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>11:22:54 AM</span> / <span>00:00:01:235</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">runScenario</h5>
-    <span class='badge badge-success'>05.08.2024 3:07:51 PM</span>
-    <span class='badge badge-danger'>05.08.2024 3:08:26 PM</span>
-    <span class='badge badge-default'>00:00:35:038</span>
-    &middot; <span class='uri-anchor badge badge-default'>#test-id=17</span>
+<h5 class="test-status text-fail">runScenario</h5>
+<span class='badge badge-success'>05.09.2024 11:22:54 AM</span>
+<span class='badge badge-danger'>05.09.2024 11:22:55 AM</span>
+<span class='badge badge-default'>00:00:01:235</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
 </div>
-</div><div class="detail-body mt-4">
+</div>    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\Users\Nishit.Sheth\IdeaProjects\MRIEnergy_AutomationSuite//Reports//runScenario051302024-112255.png' src="C:\Users\Nishit.Sheth\IdeaProjects\MRIEnergy_AutomationSuite//Reports//runScenario051302024-112255.png">
+    
+    </div></div>
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\Users\Nishit.Sheth\IdeaProjects\MRIEnergy_AutomationSuite//Reports//runScenario051302024-112255.png' src="C:\Users\Nishit.Sheth\IdeaProjects\MRIEnergy_AutomationSuite//Reports//runScenario051302024-112255.png">
+    <div class="title">runScenario</div>
+    </div></div>
+<div class="detail-body mt-4">
 <table class="table table-sm">
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-          <td>3:08:26 PM</td>
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>11:22:55 AM</td>
         <td>
-          Successful
+          <textarea readonly class="code-block">org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=124.0.6367.156)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [13b4739a336ef7c9b44ebee72f86da55, get {url=https://uksestdevtest02.ukest.lan/eSight/Identity/Account/Login}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 124.0.6367.156, chrome: {chromedriverVersion: 124.0.6367.155 (df4f029328b..., userDataDir: C:\Users\NISHIT~1.SHE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58274}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58274/devtoo..., se:cdpVersion: 124.0.6367.156, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 13b4739a336ef7c9b44ebee72f86da55
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:301)
+	at basicTemplate.browserSelector.setUp(browserSelector.java:34)
+	at stepdef.hooks.before(hooks.java:13)
+</textarea>
+          
         </td>
       </tr>
   </tbody>
@@ -190,87 +219,209 @@
 </div>
           </div>
         </li>
-          <li class="test-item" status="pass" test-id="24"
+        <li class="test-item"  status="fail" test-id="17"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">runScenario</p>
             <p class="text-sm">
-                <span>3:08:26 PM</span> / <span>00:00:05:868</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>11:22:55 AM</span> / <span>00:00:01:308</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">runScenario</h5>
-    <span class='badge badge-success'>05.08.2024 3:08:26 PM</span>
-    <span class='badge badge-danger'>05.08.2024 3:08:32 PM</span>
-    <span class='badge badge-default'>00:00:05:868</span>
-    &middot; <span class='uri-anchor badge badge-default'>#test-id=24</span>
+<h5 class="test-status text-fail">runScenario</h5>
+<span class='badge badge-success'>05.09.2024 11:22:55 AM</span>
+<span class='badge badge-danger'>05.09.2024 11:22:57 AM</span>
+<span class='badge badge-default'>00:00:01:308</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=17</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
 </div>
-</div><div class="detail-body mt-4">
+</div>    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\Users\Nishit.Sheth\IdeaProjects\MRIEnergy_AutomationSuite//Reports//runScenario051302024-112256.png' src="C:\Users\Nishit.Sheth\IdeaProjects\MRIEnergy_AutomationSuite//Reports//runScenario051302024-112256.png">
+    
+    </div></div>
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\Users\Nishit.Sheth\IdeaProjects\MRIEnergy_AutomationSuite//Reports//runScenario051302024-112257.png' src="C:\Users\Nishit.Sheth\IdeaProjects\MRIEnergy_AutomationSuite//Reports//runScenario051302024-112257.png">
+    <div class="title">runScenario</div>
+    </div></div>
+<div class="detail-body mt-4">
 <table class="table table-sm">
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-          <td>3:08:32 PM</td>
-          <td>
-              Successful
-          </td>
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>11:22:56 AM</td>
+        <td>
+          <textarea readonly class="code-block">org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=124.0.6367.156)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9d59f4ed59fc62c077e8fce63e84e74d, get {url=https://uksestdevtest02.ukest.lan/eSight/Identity/Account/Login}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 124.0.6367.156, chrome: {chromedriverVersion: 124.0.6367.155 (df4f029328b..., userDataDir: C:\Users\NISHIT~1.SHE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58290}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58290/devtoo..., se:cdpVersion: 124.0.6367.156, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9d59f4ed59fc62c077e8fce63e84e74d
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:301)
+	at basicTemplate.browserSelector.setUp(browserSelector.java:34)
+	at stepdef.hooks.before(hooks.java:13)
+</textarea>
+          
+        </td>
       </tr>
   </tbody>
 </table>
+</div>
           </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="24"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">runScenario</p>
+            <p class="text-sm">
+              <span>11:22:57 AM</span> / <span>00:00:01:333</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
           </div>
-          </li>
-          <li author="" class="test-item" device=""
-              status="pass"
-              tag=""
-              test-id="32">
-              <div class="test-detail">
-                  <p class="name">runScenario</p>
-                  <p class="text-sm">
-                      <span>3:08:32 PM</span> / <span>00:00:06:405</span>
-                      <span class="badge pass-bg log float-right">Pass</span>
-                  </p>
-              </div>
-              <div class="test-contents d-none">
-                  <div class="detail-head">
-                      <div class="p-v-10">
-                          <div class="info">
-                              <h5 class="test-status text-pass">runScenario</h5>
-                              <span class='badge badge-success'>05.08.2024 3:08:32 PM</span>
-                              <span class='badge badge-danger'>05.08.2024 3:08:38 PM</span>
-                              <span class='badge badge-default'>00:00:06:405</span>
-                              &middot; <span class='uri-anchor badge badge-default'>#test-id=32</span>
-                              <span class='badge badge-default pointer float-right ml-1 et'><i
-                                      class="fa fa-chevron-down"></i></span>
-                              <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="detail-body mt-4">
-                      <table class="table table-sm">
-                          <thead>
-                          <tr>
-                              <th class="status-col">Status</th>
-                              <th class="timestamp-col">Timestamp</th>
-                              <th class="details-col">Details</th>
-                          </tr>
-                          </thead>
-                          <tbody>
-                          <tr class="event-row">
-                              <td><span class="badge log pass-bg">Pass</span></td>
-                              <td>3:08:38 PM</td>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">runScenario</h5>
+<span class='badge badge-success'>05.09.2024 11:22:57 AM</span>
+<span class='badge badge-danger'>05.09.2024 11:22:58 AM</span>
+<span class='badge badge-default'>00:00:01:333</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=24</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\Users\Nishit.Sheth\IdeaProjects\MRIEnergy_AutomationSuite//Reports//runScenario051302024-112258.png' src="C:\Users\Nishit.Sheth\IdeaProjects\MRIEnergy_AutomationSuite//Reports//runScenario051302024-112258.png">
+    
+    </div></div>
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\Users\Nishit.Sheth\IdeaProjects\MRIEnergy_AutomationSuite//Reports//runScenario051302024-112258.png' src="C:\Users\Nishit.Sheth\IdeaProjects\MRIEnergy_AutomationSuite//Reports//runScenario051302024-112258.png">
+    <div class="title">runScenario</div>
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>11:22:58 AM</td>
         <td>
-          Successful
+          <textarea readonly class="code-block">org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=124.0.6367.156)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4b5319c86453ef4465aac7a4b8e22532, get {url=https://uksestdevtest02.ukest.lan/eSight/Identity/Account/Login}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 124.0.6367.156, chrome: {chromedriverVersion: 124.0.6367.155 (df4f029328b..., userDataDir: C:\Users\NISHIT~1.SHE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58305}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58305/devtoo..., se:cdpVersion: 124.0.6367.156, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4b5319c86453ef4465aac7a4b8e22532
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:301)
+	at basicTemplate.browserSelector.setUp(browserSelector.java:34)
+	at stepdef.hooks.before(hooks.java:13)
+</textarea>
+          
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="32"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">runScenario</p>
+            <p class="text-sm">
+              <span>11:22:58 AM</span> / <span>00:00:01:367</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">runScenario</h5>
+<span class='badge badge-success'>05.09.2024 11:22:58 AM</span>
+<span class='badge badge-danger'>05.09.2024 11:22:59 AM</span>
+<span class='badge badge-default'>00:00:01:367</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=32</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\Users\Nishit.Sheth\IdeaProjects\MRIEnergy_AutomationSuite//Reports//runScenario051302024-112259.png' src="C:\Users\Nishit.Sheth\IdeaProjects\MRIEnergy_AutomationSuite//Reports//runScenario051302024-112259.png">
+    
+    </div></div>
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\Users\Nishit.Sheth\IdeaProjects\MRIEnergy_AutomationSuite//Reports//runScenario051302024-112259.png' src="C:\Users\Nishit.Sheth\IdeaProjects\MRIEnergy_AutomationSuite//Reports//runScenario051302024-112259.png">
+    <div class="title">runScenario</div>
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>11:22:59 AM</td>
+        <td>
+          <textarea readonly class="code-block">org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=124.0.6367.156)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [83277790ce890e10a0a7e8e92c8b0d68, get {url=https://uksestdevtest02.ukest.lan/eSight/Identity/Account/Login}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 124.0.6367.156, chrome: {chromedriverVersion: 124.0.6367.155 (df4f029328b..., userDataDir: C:\Users\NISHIT~1.SHE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58319}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58319/devtoo..., se:cdpVersion: 124.0.6367.156, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 83277790ce890e10a0a7e8e92c8b0d68
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:301)
+	at basicTemplate.browserSelector.setUp(browserSelector.java:34)
+	at stepdef.hooks.before(hooks.java:13)
+</textarea>
+          
         </td>
       </tr>
   </tbody>
@@ -287,30 +438,107 @@
 </div>
 <div class="test-content-detail"><div class="detail-body"></div></div>
 </div></div>
-<div class="container-fluid p-4 view dashboard-view">
+<div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>5</span>
+</span>
+<p class="name">org.openqa.selenium.WebDriverException</p>
+<p class="duration text-sm">5 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.WebDriverException</h4>
+<span status="fail" class='badge log badge-danger'>5 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:22:51 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='1'>runScenario</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:22:54 AM</td>
+<td>
+<a href="#" class="linked" test-id='9' id='9'>runScenario</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:22:55 AM</td>
+<td>
+<a href="#" class="linked" test-id='17' id='17'>runScenario</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:22:57 AM</td>
+<td>
+<a href="#" class="linked" test-id='24' id='24'>runScenario</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:22:58 AM</td>
+<td>
+<a href="#" class="linked" test-id='32' id='32'>runScenario</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
 <div class="row">
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-    <h3>May 8, 2024 03:06:15 PM</h3>
+<h3>May 9, 2024 11:21:51 AM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-    <h3>May 8, 2024 03:08:43 PM</h3>
+<h3>May 9, 2024 11:23:03 AM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Tests Passed</p>
-    <h3>5</h3>
+<h3>0</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Tests Failed</p>
-<h3>0</h3>
+<h3>5</h3>
 </div></div>
 </div>
 </div>
@@ -326,12 +554,12 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'>
-    <b>5</b> tests passed
+<div><small data-tooltip='0%'>
+<b>0</b> tests passed
 </small>
 </div>
 <div>
-<small data-tooltip='0%'><b>0</b> tests failed,
+<small data-tooltip='100%'><b>5</b> tests failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -349,9 +577,9 @@
 </div>
 </div>
 <div class="card-footer">
-    <div><small data-tooltip='100%'><b>5</b> events passed</small></div>
+<div><small data-tooltip='0%'><b>0</b> events passed</small></div>
 <div>
-<small data-tooltip='0%'><b>0</b> events failed,
+<small data-tooltip='100%'><b>5</b> events failed,
 <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -368,7 +596,7 @@
 </div></div>
 <script>
 var timeline = {
-"runScenario":13.18,"runScenario":82.268,"runScenario":35.038,"runScenario":5.868,"runScenario":6.405
+"runScenario":2.572,"runScenario":1.235,"runScenario":1.308,"runScenario":1.333,"runScenario":1.367
 };
 </script>
 <div class="row">
@@ -379,12 +607,8 @@ var timeline = {
 <thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
 <tbody>
 <tr>
-<td>QA Manager</td>
-<td>Nishit Sheth</td>
-</tr>
-<tr>
 <td>Tester Name </td>
-<td>Nishit</td>
+<td>Nishit Sheth</td>
 </tr>
 <tr>
 <td>Build No </td>
@@ -403,8 +627,8 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 5,
-failParent: 0,
+passParent: 0,
+failParent: 5,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
@@ -420,8 +644,8 @@ warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
-passEvents: 5,
-failEvents: 0,
+passEvents: 0,
+failEvents: 5,
 warningEvents: 0,
 skipEvents: 0,
 infoEvents: 0

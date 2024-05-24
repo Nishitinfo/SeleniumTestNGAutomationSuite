@@ -127,7 +127,7 @@
                                 <goal>generate</goal>
                             </goals>
                             <configuration>
-                                <projectName>Amazon</projectName>
+                                <projectName>MRI Energy</projectName>
                                 <outputDirectory>${project.build.directory}/site/</outputDirectory>
                                 <cucumberOutput>${project.build.directory}/cucumber.json</cucumberOutput>
                             </configuration>
