@@ -35,7 +35,7 @@ public class manageInvoicePage extends utils {
     public static By invoiceValidationMenu = By.xpath("/html/body/form/div[5]/div[1]/div[3]/div[1]/ul/li[6]/a/div/span");
     public static By manageInvoiceLink = By.linkText("Manage Invoices");
     public static By portfolio = By.xpath("/html/body/div[1]/div[2]/div/div/div/div/div[1]/div/form/div/div[1]/div[1]/div[1]/span/button");
-    public static By selectPortfolio = By.xpath("/html[1]/body[1]/div[8]/div[1]/div[1]/div[1]/div[1]/ul[1]/li[2]");
+    public static By selectPortfolio = By.xpath("/html[1]/body[1]/div[8]/div[1]/div[1]/div[1]/div[1]/ul[1]/li[3]");
     public static By addButton = By.xpath("/html/body/div[1]/div[2]/div/div/div[2]/div/div[1]/button[1]");
     public static By searchAccount = By.xpath("/html/body/div[1]/div[2]/div/div/div/div/div[1]/div/form/div/div[1]/div[1]/div[2]/span/input");
     public static By selectAccount = By.xpath("/html[1]/body[1]/div[9]/div[1]/div[1]/div[1]/div[2]/ul[1]/li[1]");
@@ -45,17 +45,17 @@ public class manageInvoicePage extends utils {
     public static By clickOnStartDateCalender = By.xpath("/html/body/div[1]/div[2]/div/div/div/div/div[1]/div/form/div/div[1]/div[5]/div[1]/div[1]/div[1]/span/button");
     public static By selectStartMonthList = By.xpath("/html[1]/body[1]/div[3]/div[1]/div[1]/div[1]/div[1]/button[1]/span[1]");
     public static By selectStartMonth = By.xpath("/html/body/div[3]/div/div/div/div[2]/table/tbody/tr[3]/td[3]/span");
-    public static By selectStartDate = By.xpath("//td[@title='"+InvoiceStartDay+InvoiceStartDate+"']//span[@class='k-link'][normalize-space()='1']");
+    public static By selectStartDate = By.xpath("//td[@title='" + InvoiceStartDay + " " + InvoiceStartDate + "']//span[@class='k-link'][normalize-space()='1']");
     public static By clickOnEndDateCalender = By.xpath("/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[1]/div[1]/div[5]/div[1]/div[1]/div[2]/span[1]/button[1]");
     public static By selectEndMonthList = By.xpath("/html/body/div[4]/div/div/div/div[1]/button/span");
-    public static By selectEndMonth = By.xpath("//td[@title='"+EndMonth+"']");
-    public static By selectEndDate = By.xpath("//span[normalize-space()='"+EndDate+"']");
+    public static By selectEndMonth = By.xpath("//td[@title='" + EndMonth + "']");
+    public static By selectEndDate = By.xpath("//span[normalize-space()='" + EndDate + "']");
     public static By clickOnInvoiceDateCalender = By.xpath("/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[1]/div[1]/div[5]/div[1]/div[2]/div[1]/span[1]/button[1]");
-    public static By selectInvoiceDate = By.xpath("//span[normalize-space()='"+InvoiceDate+"']");
+    public static By selectInvoiceDate = By.xpath("//span[normalize-space()='" + InvoiceDate + "']");
     public static By clickOnReceivedDateCalender = By.xpath("/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[1]/div[1]/div[5]/div[1]/div[2]/div[2]/span[1]/button[1]");
-    public static By selectReceivedDate = By.xpath("//span[normalize-space()='"+ ReceivedDate +"']");
+    public static By selectReceivedDate = By.xpath("//span[normalize-space()='" + ReceivedDate + "']");
     public static By clickOnDueDateCalender = By.xpath("/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[1]/div[1]/div[5]/div[1]/div[3]/div[1]/span[1]/button[1]");
-    public static By selectDueDate = By.xpath("//span[normalize-space()='"+DueDate+"']");
+    public static By selectDueDate = By.xpath("//span[normalize-space()='" + DueDate + "']");
     public static By clickOnCurrencyDropdown = By.xpath("/html/body/div[1]/div[2]/div/div/div/div/div[1]/div/form/div/div[1]/div[6]/div[1]/span/input");
     public static By selectCurrency = By.xpath("//span[@class='k-list-item-text']");
     public static By netTotal = By.xpath("/html/body/div[1]/div[2]/div/div/div/div/div[1]/div/form/div/div[1]/div[7]/div[1]/span/input");
@@ -76,29 +76,30 @@ public class manageInvoicePage extends utils {
     public static By clickOnRemoveConsumption = By.xpath("//div[15]//button[1]");
     public static By meterSelection = By.xpath("/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[4]/div[1]/div[2]/span[1]/button[1]");
     public static By clickOnRateDescription = By.xpath("//input[@id='ddChargeDescription']");
-    public static By selectRateDescription = By.xpath("//*/text()[normalize-space(.)='Energy Charge - All Times']/parent::*");
+    public static By selectRateDescription = By.xpath("//*/text()[normalize-space(.)='Energy Charge - Day']/parent::*");
     public static By searchRateDescription = By.xpath("/html/body/div[1]/div[2]/div/div/div/div/div[1]/div/form/div[4]/div[1]/div[6]/span/input");
     public static By selectMeterNumber = By.xpath("//li/span");
-    public static By clickOnNextButtonForCharges = By.xpath("//button[6]");
+    public static By clickOnNextButtonForCharges = By.xpath("//button[5]");
     public static By addPrice = By.xpath("/html/body/div[1]/div[2]/div/div/div/div/div[1]/div/form/div[1]/div/div[2]/div/div[2]/div[2]/div[2]/div[1]/div/table/tbody/tr[1]/td[4]");
     public static By enterPrice = By.xpath("/html/body/div[1]/div[2]/div/div/div/div/div[1]/div/form/div[1]/div/div[2]/div/div[2]/div[2]/div[2]/div[1]/div/table/tbody/tr[1]/td[4]/span[1]/input");
     public static By addUnit = By.xpath("/html/body/div[1]/div[2]/div/div/div/div/div[1]/div/form/div[1]/div/div[2]/div/div[2]/div[2]/div[2]/div[1]/div/table/tbody/tr[1]/td[5]");
     public static By enterUnits = By.xpath("/html/body/div[1]/div[2]/div/div/div/div/div[1]/div/form/div[1]/div/div[2]/div/div[2]/div[2]/div[2]/div[1]/div/table/tbody/tr[1]/td[5]/span/input");
     public static By addMeter = By.xpath("/html/body/div[1]/div[2]/div/div/div/div/div[1]/div/form/div[1]/div/div[2]/div/div[1]/button[1]");
     public static By removeMeter = By.xpath("//tbody/tr[2]/td[10]/span[1]/button[1]");
-    public static By removeTaxCharge = By.xpath("/html/body/div[1]/div[2]/div/div/div/div/div[1]/div/form/div[3]/div/div[2]/div/div[2]/div[2]/div[2]/div[1]/div/table/tbody/tr[1]/td[8]/span/button");
-    public static By addTaxCharge = By.xpath("/html/body/div[1]/div[2]/div/div/div/div/div[1]/div/form/div[3]/div/div[2]/div/div[1]/div/div[1]/button");
-    public static By searchTaxCharge = By.xpath("/html/body/div[1]/div[2]/div/div/div/div/div[1]/div/form/div[3]/div/div[2]/div/div[2]/div[2]/div[2]/div[1]/div/table/tbody/tr/td[1]/span/input");
+    public static By removeTaxCharge = By.xpath("/html/body/div[1]/div[2]/div/div/div/div/div[1]/div/form/div[4]/div/div[2]/div/div[2]/div[2]/div[2]/div[1]/div/table/tbody/tr[2]/td[8]/span/button");
+    public static By addTaxCharge = By.xpath("//div[@aria-label='Grid toolbar']//div//div//button[@type='button']");
+    public static By searchTaxCharge = By.xpath("//input[@role='combobox']");
     public static By selectTaxCharge = By.xpath("//span[@class='k-list-item-text']");
-    public static By enterMeter = By.xpath("/html/body/div[1]/div[2]/div/div/div/div/div[1]/div/form/div[3]/div/div[2]/div/div[2]/div[2]/div[2]/div[1]/div/table/tbody/tr/td[2]/span/input");
-    public static By clickOnSelectMeter = By.xpath("/html/body/div[1]/div[2]/div/div/div/div/div[1]/div/form/div[3]/div/div[2]/div/div[2]/div[2]/div[2]/div[1]/div/table/tbody/tr/td[2]/div");
-    public static By selectMeter = By.xpath("/html[1]/body[1]/div[5]/div[1]/div[1]/div[1]/div[2]/ul[1]/li[1]/span[1]");
-    public static By addTaxRate = By.xpath("/html/body/div[1]/div[2]/div/div/div/div/div[1]/div/form/div[3]/div/div[2]/div/div[2]/div[2]/div[2]/div[1]/div/table/tbody/tr/td[3]");
-    public static By clearTaxCharge = By.xpath("/html/body/div[1]/div[2]/div/div/div/div/div[1]/div/form/div[3]/div/div[2]/div/div[2]/div[2]/div[2]/div[1]/div/table/tbody/tr/td[1]/span/span/span");
-    public static By clickOnTaxCharge = By.xpath("/html/body/div[1]/div[2]/div/div/div/div/div[1]/div/form/div[3]/div/div[2]/div/div[2]/div[2]/div[2]/div[1]/div/table/tbody/tr/td[1]");
-    public static By enterTaxRate = By.xpath("/html/body/div[1]/div[2]/div/div/div/div/div[1]/div/form/div[3]/div/div[2]/div/div[2]/div[2]/div[2]/div[1]/div/table/tbody/tr/td[3]/span/input");
-    public static By clickOnNextForValidationReview = By.xpath("/html/body/div[1]/div[2]/div/div/div/div/div[2]/span[2]/button[6]");
-    public static By clickOnSaveAndClose = By.xpath("/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/span[2]/button[6]");
+    public static By enterMeter = By.xpath("//input[contains(@placeholder,'Please select')]");
+    public static By clickOnSelectMeter = By.xpath("/html/body/div[1]/div[2]/div/div/div/div/div[1]/div/form/div[4]/div/div[2]/div/div[2]/div[2]/div[2]/div[1]/div/table/tbody/tr/td[2]/div");
+    public static By selectMeter = By.xpath("//span[normalize-space()='" + SearchMeterText + "']");
+    public static By addTaxRate = By.xpath("/html/body/div[1]/div[2]/div/div/div/div/div[1]/div/form/div[4]/div/div[2]/div/div[2]/div[2]/div[2]/div[1]/div/table/tbody/tr/td[3]");
+    public static By clearTaxCharge = By.xpath("//*[name()='path' and contains(@d,'M416 141.3')]");
+    public static By clickOnTaxCharge = By.xpath("/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[4]/div[1]/div[2]/div[1]/div[2]/div[2]/div[2]/div[1]/div[1]/table[1]/tbody[1]/tr[1]/td[1]/div[1]");
+    public static By enterTaxRate = By.xpath("//input[@role='spinbutton']");
+    public static By clickOnNextForValidationReview = By.xpath("//div[@class='telerik-blazor k-split-button k-rounded-full k-button-group']//button[1]");
+    public static By ClickToRevalidate = By.xpath("//div[@aria-label='Grid toolbar']//button[@type='button']");
+    public static By clickOnSaveAndClose = By.xpath("/html/body/div[1]/div[2]/div/div[3]/span[3]/button");
     public static By clickOnSaveAndContinue = By.xpath("/html/body/div[1]/div[2]/div/div/div/div/div[2]/span[2]/button[7]");
     //    public static By clickOnAddNoteIcon = By.xpath("/html/body/div[1]/div[2]/div/div/div/div/div[2]/span[2]/div[1]/button");
     //    public static By addNote = By.xpath("");
@@ -113,17 +114,17 @@ public class manageInvoicePage extends utils {
     public static By clickOnEndMonthCalender = By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='items per page'])[1]/following::button[1]");
     public static By selectEndMonthOnCalender = By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Reload'])[1]/preceding::span[1]");
     public static By selectEndDateOnMonth = By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Reload'])[1]/preceding::span[6]");
-    public static By ApplyFilterButton = By.xpath("//button[@type='submit']");
+    public static By ApplyFilterButton = By.xpath("//*[@id=\"MainPane\"]/div/div/span/span[1]/button");
     public static By selectRawInGrid = By.xpath("//tbody/tr[1]/td[1]/span[1]/span[1]/input[1]");
-    public static By clickOnOptions = By.xpath("//tr[contains(@class,'k-master-row k-table-row k-selected')]//i[contains(@class,'fas fa-ellipsis-h')]");
-    public static By selectDeleteOption = By.xpath("(//li[contains(@role,'menuitem')])[12]");
+    public static By clickOnOptions = By.xpath("/html/body/div[1]/div[2]/div/div/div[2]/div/div[3]/div[2]/div[2]/div[1]/div/table/tbody/tr[1]/td[24]/span/div/button");
+    public static By selectDeleteOption = By.xpath("/html/body/div[5]/div/div/ul/li[12]/span/div/div[2]");
     public static By deleteText = By.xpath("/html/body/div[3]/div[2]/div[2]/div/div[1]/div[3]/span/input");
     public static By SubmitButtonOnDeleteModel = By.xpath("/html/body/div[3]/div[2]/div[2]/div/div[2]/div[1]/button");
 
     //=
-    @Parameters("Browser")
+    @Parameters("browser")
     @BeforeTest
-    public void launchBrowser(String Browser) {
+    public void launchBrowser(String Browser) throws Exception {
         browserSelector.LaunchBrowser(Browser);
     }
 
@@ -153,6 +154,7 @@ public class manageInvoicePage extends utils {
         Thread.sleep(1000);
         clickOnElement(selectPortfolio);
         enterText(searchAccount, AccountNumber);
+        Thread.sleep(200);
         clickOnElement(selectAccount);
         Thread.sleep(1000);
         enterText(searchInvoiceType, InvoiceType);
@@ -168,6 +170,8 @@ public class manageInvoicePage extends utils {
         Thread.sleep(1000);
         clickOnElement(selectStartMonth);
         Thread.sleep(1000);
+        System.out.println(selectStartDate);
+        isElementPresent(selectStartDate);
         clickOnElement(selectStartDate);
         Thread.sleep(1000);
         clickOnElement(clickOnEndDateCalender);
@@ -214,17 +218,20 @@ public class manageInvoicePage extends utils {
     public void invoiceConsumption() throws InterruptedException {
         Thread.sleep(1000);
         clickOnElement(clickOnAddConsumption);
+        Thread.sleep(1000);
+        clickOnElement(clickOnRemoveConsumption);
+        Thread.sleep(1000);
         clickOnElement(clickOnRemoveConsumption);
 //        clickOnElement(clickOnAddConsumption);
 //        Thread.sleep(1000);
 //        clickOnElement(meterSelection);
 //        Thread.sleep(1000);
 //        clickOnElement(selectMeterNumber);
+        Thread.sleep(1000);
         clickOnElement(clickOnRateDescription);
         enterText(searchRateDescription, SearchRateDescription);
         Thread.sleep(2000);
         clickOnElement(selectRateDescription);
-
         clickOnElement(clickOnNextButtonForCharges);
     }
 
@@ -249,7 +256,11 @@ public class manageInvoicePage extends utils {
         Thread.sleep(1000);
         clickOnElement(removeMeter);
         Thread.sleep(1000);
+        clickOnElement(removeMeter);
+        Thread.sleep(1000);
         clickOnElement(addTaxCharge);
+        Thread.sleep(1000);
+        clickOnElement(removeTaxCharge);
         Thread.sleep(1000);
         clickOnElement(removeTaxCharge);
         Thread.sleep(1000);
@@ -273,7 +284,10 @@ public class manageInvoicePage extends utils {
         Thread.sleep(5000);
         clickOnElement(clickOnNextForValidationReview);
         Thread.sleep(5000);
+        clickOnElement(ClickToRevalidate);
+        Thread.sleep(10000);
         clickOnElement(clickOnSaveAndClose);
+        Thread.sleep(2000);
         //    clickOnElement(clickOnSaveAndContinue); For continuing the creation of invoice
 
     }
@@ -282,6 +296,7 @@ public class manageInvoicePage extends utils {
         Thread.sleep(5000);
         clickOnElement(ClickOnPath);
         clickOnElement(SelectPath);
+        Thread.sleep(100);
         clickOnElement(clickOnStartDateCalenderOnListing);
         clickOnElement(clickOnStartMonthCalender);
         clickOnElement(selectStartMonthOnCalender);
@@ -293,10 +308,13 @@ public class manageInvoicePage extends utils {
         clickOnElement(selectEndMonthOnCalender);
         Thread.sleep(500);
         clickOnElement(selectEndDateOnMonth);
+        Thread.sleep(500);
         clickOnElement(ApplyFilterButton);
+        Thread.sleep(500);
         clickOnElement(selectRawInGrid);
         Thread.sleep(2000);
         clickOnElement(clickOnOptions);
+        Thread.sleep(500);
         clickOnElement(selectDeleteOption);
         Thread.sleep(500);
         enterText(deleteText, loginPage.U_name);
@@ -305,7 +323,7 @@ public class manageInvoicePage extends utils {
     }
 
     @AfterTest
-    public void closeBrowser() {
+    public void closeBrowser() throws Exception {
         browserSelector.closeBrowser();
     }
 }

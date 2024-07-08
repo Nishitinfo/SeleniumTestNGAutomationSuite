@@ -62,7 +62,6 @@ public class utils extends baseClass {
     }
 
 
-
     public static String timeStamp() {
         DateFormat dateFormat = new SimpleDateFormat("MMDDYYYY-HHmmss");
         Date date = new Date();
