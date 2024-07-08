@@ -14,7 +14,7 @@ import java.io.IOException;
 
 public class listener extends utils implements ITestListener {
     private static final ThreadLocal<ExtentTest> extentTest = new ThreadLocal<ExtentTest>();
-    ExtentReports extent = ExtentReporterNG.extentReportGenerator();
+    ExtentReports extent = extentReporterNG.extentReportGenerator();
     ExtentTest test;
 
     public listener() throws IOException {
@@ -54,7 +54,7 @@ public class listener extends utils implements ITestListener {
         }
 
         try {
-            extentTest.get().addScreenCaptureFromPath(getScreenShotPath(result.getMethod().getMethodName()),result.getMethod().getMethodName());
+            extentTest.get().addScreenCaptureFromPath(getScreenShotPath(result.getMethod().getMethodName()), result.getMethod().getMethodName());
         } catch (IOException | AWTException e) {
             e.printStackTrace();
         }

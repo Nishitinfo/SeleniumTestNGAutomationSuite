@@ -5,11 +5,11 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 import java.awt.*;
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileOutputStream;
 import java.io.IOException;
 import java.nio.file.*;
 import java.nio.file.attribute.BasicFileAttributes;
@@ -57,13 +57,13 @@ public class utils extends baseClass {
     }
 
     public static String randomDate() {
-        DateFormat format = new SimpleDateFormat("ddMMMyyHHmmss");
+        DateFormat format = new SimpleDateFormat("MMDDYYYYHHmmss");
         return format.format(new Date());
     }
 
 
     public static String timeStamp() {
-        DateFormat dateFormat = new SimpleDateFormat("ddMMYY-HHmmss");
+        DateFormat dateFormat = new SimpleDateFormat("MMDDYYYY-HHmmss");
         Date date = new Date();
         return dateFormat.format(date);
     }
@@ -120,6 +120,19 @@ public class utils extends baseClass {
         String url = driver.getCurrentUrl();
         return url;
     }
+
+    public static void UploadFile(By by, By args) {
+        WebElement addFile = driver.findElement(by);
+        File file = new File("C://Users//Nishit.Sheth//IdeaProjects//MRIEnergy_AutomationSuite//Extent-Report//PdfReport//extentPdf.pdf");
+        addFile.sendKeys(file.getAbsolutePath());
+        if (driver.findElement(args).isDisplayed()) {
+            Assert.assertTrue(true, "Image Uploaded");
+        } else {
+            Assert.fail("Image not Uploaded");
+        }
+
+    }
+
 
     public static void createNewTab() {
         //Open a new tab using Ctrl + t
@@ -198,8 +211,8 @@ public class utils extends baseClass {
     }
 
     public static String nextDateString() {
-        String curDate = todayDateString("ddMMyyyy");
-        final SimpleDateFormat format = new SimpleDateFormat("ddMMyyyy");
+        String curDate = todayDateString("MMDDYYYY");
+        final SimpleDateFormat format = new SimpleDateFormat("MMDDYYYY");
         Date date = null;
         try {
             date = format.parse(curDate);
@@ -214,7 +227,7 @@ public class utils extends baseClass {
     }
 
     public static String addYearTodayDateString(String change, int year) {
-        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("ddMMyyyy");
+        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("MMDDYYYY");
         LocalDate date = LocalDate.now();
         LocalDate returnvalue = null;
         switch (change) {
@@ -312,6 +325,7 @@ public class utils extends baseClass {
         }
 
     }
+
 
     public static String removeLastCharacterOfString(String str) {
         if (str != null && str.length() > 0) {

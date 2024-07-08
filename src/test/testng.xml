@@ -6,35 +6,40 @@
         <listener class-name="basicTemplate.listener">
         </listener>
     </listeners>
-    <test name="Parallel Tests using edge" parallel="classes">
-        <parameter name="browser" value="edge"/>
+
+    //Cross Browser with Single Test //
+    <test name="Cross Browser Tests using edge" parallel="classes">
+        <parameter name="Browser" value="edge"/>
         <classes>
-                <class name="basicTemplate.pages.loginPage"/>
+            <class name="basicTemplate.pages.loginPage"/>
         </classes>
     </test>
-    <test name="Parallel Tests using chrome" parallel="classes">
-        <parameter name="browser" value="chrome"/>
+    <test name="Cross Browser Tests using chrome" parallel="classes">
+        <parameter name="Browser" value="chrome"/>
         <classes>
             <class name="basicTemplate.pages.loginPage"/>
         </classes>
     </test>
 
-    <test name="Parallel Tests using edge with Runner" parallel="classes">
-        <parameter name="browser" value="edge"/>
+    <!--    //Parallel runner Tests using chrome//-->
+    <test name="Parallel runner Tests using chrome" parallel="classes">
+        <parameter name="Browser" value="chrome"/>
         <classes>
-            <class name="runner.TestRunner"/>
+            <class name="runner.testRunner"/>
         </classes>
     </test>
-<!--    <test name="Parallel Tests using firefox" parallel="classes">-->
-<!--        <parameter name="browser" value="firefox"/>-->
+
+    <!--        <test name="Parallel Tests using edge with Runner" parallel="classes">-->
+    <!--            <parameter name="Browser" value="edge"/>-->
 <!--        <classes>-->
-<!--                <class name="basicTemplate.pages.loginPage"/>-->
+    <!--                <class name="runner.testRunner"/>-->
 <!--        </classes>-->
 <!--    </test>-->
+
 <!--    <test name="Parallel Tests using safari" parallel="classes">-->
-<!--        <parameter name="browser" value="safari"/>-->
+    <!--            <parameter name="Browser" value="safari"/>-->
 <!--        <classes>-->
-    <!--            <class name="basicTemplate.pages.loginPagee"/>-->
+    <!--                <class name="basicTemplate.pages.loginPage"/>-->
 <!--        </classes>-->
 <!--    </test>-->
 </suite>
