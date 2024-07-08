@@ -35,13 +35,14 @@ public class loginPage extends utils {
     }
 
     @AfterTest
-    public void closeBrowser() {
+    public void closeBrowser() throws Exception {
         browserSelector.closeBrowser();
     }
 
-    @Parameters("Browser")
+
     @BeforeTest
-    public void launchBrowser(String Browser) {
+    @Parameters("Browser")
+    public void launchBrowser(String Browser) throws Exception {
         browserSelector.LaunchBrowser(Browser);
     }
 
