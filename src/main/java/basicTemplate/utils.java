@@ -57,14 +57,14 @@ public class utils extends baseClass {
     }
 
     public static String randomDate() {
-        DateFormat format = new SimpleDateFormat("ddMMMyyHHmmss");
+        DateFormat format = new SimpleDateFormat("MMDDYYYYHHmmss");
         return format.format(new Date());
     }
 
 
 
     public static String timeStamp() {
-        DateFormat dateFormat = new SimpleDateFormat("ddMMYY-HHmmss");
+        DateFormat dateFormat = new SimpleDateFormat("MMDDYYYY-HHmmss");
         Date date = new Date();
         return dateFormat.format(date);
     }
@@ -212,8 +212,8 @@ public class utils extends baseClass {
     }
 
     public static String nextDateString() {
-        String curDate = todayDateString("ddMMyyyy");
-        final SimpleDateFormat format = new SimpleDateFormat("ddMMyyyy");
+        String curDate = todayDateString("MMDDYYYY");
+        final SimpleDateFormat format = new SimpleDateFormat("MMDDYYYY");
         Date date = null;
         try {
             date = format.parse(curDate);
@@ -228,7 +228,7 @@ public class utils extends baseClass {
     }
 
     public static String addYearTodayDateString(String change, int year) {
-        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("ddMMyyyy");
+        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("MMDDYYYY");
         LocalDate date = LocalDate.now();
         LocalDate returnvalue = null;
         switch (change) {

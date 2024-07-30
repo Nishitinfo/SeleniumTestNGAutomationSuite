@@ -5,9 +5,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>MRI Energy Automation Script Spark Report</title>
-<!--<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">-->
-<!--<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">-->
+<title>Extent</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
 <link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
 <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
@@ -16,9 +16,9 @@
     <div class="layout">
 <div class="header navbar">
 <div class="vheader">
-<div class="nav-left">
+<div class="nav-logo">
 <a href="#">
-<div class="nav-left" ><img src="../../src/test/resources/attachments/mri_energy_logo.png" height="50" width="80"/></div>
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
 </a>
 </div>
 <ul class="nav-left">
@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Cucumber Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">May 8, 2024 04:13:46 PM</span></a>
+<a href="#"><span class="badge badge-primary">May 9, 2024 11:22:51 AM</span></a>
 </li>
 </ul>
 </div>
@@ -71,13 +71,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>May 8, 2024 04:13:46 PM</h3>
+<h3>May 9, 2024 11:22:51 AM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>May 8, 2024 04:14:37 PM</h3>
+<h3>May 9, 2024 11:22:59 AM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -89,7 +89,7 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Features Failed</p>
-<h3>1</h3>
+<h3>2</h3>
 </div></div>
 </div>
 </div>
@@ -110,7 +110,7 @@
 </small>
 </div>
 <div>
-<small data-tooltip='100%'><b>1</b> features failed,
+<small data-tooltip='100%'><b>2</b> features failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -128,9 +128,9 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='50%'><b>1</b> scenarios passed</small></div>
+<div><small data-tooltip='0%'><b>0</b> scenarios passed</small></div>
 <div>
-<small data-tooltip='50%'><b>1</b> scenarios failed,
+<small data-tooltip='100%'><b>5</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -148,10 +148,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='71%'><b>5</b> steps passed</small></div>
+<div><small data-tooltip='0%'><b>0</b> steps passed</small></div>
 <div>
-<small data-tooltip='14%'><b>1</b> steps failed,
-<b>1</b> skipped, <b data-tooltip='%'>0</b> others
+<small data-tooltip='38%'><b>10</b> steps failed,
+<b>16</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
 </div>
@@ -167,7 +167,7 @@
 </div></div>
 <script>
 var timeline = {
-"Validate User Redirection and Functionality in MRI Energy Web Application for Invoice Validation feature":50.269
+"Validate User Redirection and Functionality in MRI Energy Web Application for Invoice Validation feature":4.728,"Validate User Redirection and Functionality in MRI Energy Web Application Login feature":2.504
 };
 </script>
 <div class="row">
@@ -178,14 +178,38 @@ var timeline = {
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
 <td>@Priority=2</td>
+<td>0</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@Priority=0</td>
 <td>0</td>
-<td>100%</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@Priority=1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
 </tr>
 <tr>
 <td>@Priority=3</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@Priority=4</td>
 <td>0</td>
 <td>1</td>
 <td>0</td>
@@ -228,20 +252,20 @@ var timeline = {
 var statusGroup = {
 parentCount: 5,
 passParent: 0,
-failParent: 1,
+failParent: 2,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 1,
-failChild: 1,
+passChild: 0,
+failChild: 5,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 5,
-failGrandChild: 1,
+passGrandChild: 0,
+failGrandChild: 10,
 warningGrandChild: 0,
-skipGrandChild: 1,
+skipGrandChild: 16,
 infoGrandChild: 0,
 eventsCount: 5,
 };
@@ -263,7 +287,7 @@ eventsCount: 5,
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@Priority=2</a><a class="dropdown-item" href="#">@Priority=3</a>
+<a class="dropdown-item" href="#">@Priority=2</a><a class="dropdown-item" href="#">@Priority=0</a><a class="dropdown-item" href="#">@Priority=1</a><a class="dropdown-item" href="#">@Priority=3</a><a class="dropdown-item" href="#">@Priority=4</a>
 </ul>
 </li>
 </ul>
@@ -276,7 +300,7 @@ eventsCount: 5,
           <div class="test-detail">
             <p class="name">Validate User Redirection and Functionality in MRI Energy Web Application for Invoice Validation feature</p>
             <p class="text-sm">
-              <span>4:13:47 PM</span> / <span>00:00:50:269</span>
+              <span>11:22:52 AM</span> / <span>00:00:04:728</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -285,9 +309,9 @@ eventsCount: 5,
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-fail">Validate User Redirection and Functionality in MRI Energy Web Application for Invoice Validation feature</h5>
-<span class='badge badge-success'>05.08.2024 4:13:47 PM</span>
-<span class='badge badge-danger'>05.08.2024 4:14:37 PM</span>
-<span class='badge badge-default'>00:00:50:269</span>
+<span class='badge badge-success'>05.09.2024 11:22:52 AM</span>
+<span class='badge badge-danger'>05.09.2024 11:22:56 AM</span>
+<span class='badge badge-default'>00:00:04:728</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -299,24 +323,64 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="3"><span class="badge log pass-bg mr-2">Pass</span>Verify that user is able to access Invoice Validation</div>
+        <div class="node" id="3"><span class="badge log fail-bg mr-2">Fail</span>Verify that user is able to access Invoice Validation</div>
       </div>
     </div>
-        <div class="collapse">
+        <div class="">
           <div class="card-body">
-              <div class="step pass-bg" title="stepdef.loginScreen.verifyRedirection()">
+              <div class="step fail-bg" title="BEFORE">
+                <span>stepdef.hooks.before()</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=124.0.6367.156)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8aa3c2a88633775ca2da0d5d0d1164a6, get {url=https://uksestdevtest02.ukest.lan/eSight/Identity/Account/Login}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 124.0.6367.156, chrome: {chromedriverVersion: 124.0.6367.155 (df4f029328b..., userDataDir: C:\Users\NISHIT~1.SHE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58261}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58261/devtoo..., se:cdpVersion: 124.0.6367.156, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8aa3c2a88633775ca2da0d5d0d1164a6
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:301)
+	at basicTemplate.browserSelector.setUp(browserSelector.java:34)
+	at stepdef.hooks.before(hooks.java:13)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdef.loginScreen.verifyRedirection()">
                 <span>Given User is redirected to the application's URL</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="stepdef.manageInvoicesScreen.user_Try_To_Access_The_Invoice_Listing()">
+              <div class="step skip-bg" title="stepdef.manageInvoicesScreen.user_Try_To_Access_The_Invoice_Listing()">
                 <span>When User navigates to the Invoice listing page</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="stepdef.manageInvoicesScreen.verify_That_User_Should_Be_Able_To_Access_The_Invoice_Validation()">
+              <div class="step skip-bg" title="stepdef.manageInvoicesScreen.verify_That_User_Should_Be_Able_To_Access_The_Invoice_Validation()">
                 <span>Then Verify that user should be able to access the Invoice Validation</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step fail-bg" title="AFTER">
+                <span>stepdef.hooks.after()</span>
       <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.monte.screenrecorder.ScreenRecorder.stop()" because "basicTemplate.myRecording.screenRecorder" is null
+	at basicTemplate.myRecording.stopRecording(myRecording.java:62)
+	at basicTemplate.recording.StopCapturing(recording.java:64)
+	at basicTemplate.browserSelector.tearDown(browserSelector.java:79)
+	at stepdef.hooks.after(hooks.java:18)
+</textarea>
+      
       </div>
               </div>
           </div>
@@ -330,28 +394,17 @@ eventsCount: 5,
     </div>
         <div class="">
           <div class="card-body">
-              <div class="step pass-bg" title="stepdef.loginScreen.verifyRedirection()">
-                <span>Given User is redirected to the application's URL</span>
+              <div class="step fail-bg" title="BEFORE">
+                <span>stepdef.hooks.before()</span>
       <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdef.manageInvoicesScreen.user_Try_To_Access_The_Invoice_Listing()">
-                <span>And User navigates to the Invoice listing page</span>
-      <div>
-      </div>
-              </div>
-              <div class="step fail-bg" title="stepdef.manageInvoicesScreen.the_user_initiates_the_creation_of_a_new_invoice()">
-                <span>When the User initiates the creation of a new invoice</span>
-      <div>
-        <textarea disabled class="code-block">org.openqa.selenium.InvalidArgumentException: invalid argument: File not found : C:\Users\Nishit.Sheth\IdeaProjects\esight_Automation\Extent-Report\PdfReport\extentPdf.pdf
+        <textarea disabled class="code-block">org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
   (Session info: chrome=124.0.6367.156)
 Build info: version: '4.18.1', revision: 'b1d3319b48'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [37aeef874e318105054a29149784eb85, sendKeysToElement {value=[Ljava.lang.CharSequence;@189c9e7b, id=f.1CE70248E66687FD9B02CF5ADBB2C7E5.d.5D3D61C15275A3687DC94FF71DBE76DF.e.373}]
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 124.0.6367.156, chrome: {chromedriverVersion: 124.0.6367.155 (df4f029328b..., userDataDir: C:\Users\NISHIT~1.SHE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50088}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50088/devtoo..., se:cdpVersion: 124.0.6367.156, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (37aeef874e318105054a29149784eb85)] -> xpath: .//input[@type='file']]
-Session ID: 37aeef874e318105054a29149784eb85
+Command: [13b4739a336ef7c9b44ebee72f86da55, get {url=https://uksestdevtest02.ukest.lan/eSight/Identity/Account/Login}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 124.0.6367.156, chrome: {chromedriverVersion: 124.0.6367.155 (df4f029328b..., userDataDir: C:\Users\NISHIT~1.SHE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58274}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58274/devtoo..., se:cdpVersion: 124.0.6367.156, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 13b4739a336ef7c9b44ebee72f86da55
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
@@ -362,20 +415,271 @@ Session ID: 37aeef874e318105054a29149784eb85
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
-	at basicTemplate.utils.UploadFile(utils.java:128)
-	at basicTemplate.pages.manageInvoicePage.invoiceDetail(manageInvoicePage.java:198)
-	at basicTemplate.pages.manageInvoicePage.createInvoice(manageInvoicePage.java:132)
-	at stepdef.manageInvoicesScreen.the_user_initiates_the_creation_of_a_new_invoice(manageInvoicesScreen.java:31)
-	at ✽.the User initiates the creation of a new invoice(file:///C:/Users/Nishit.Sheth/IdeaProjects/MRIEnergy_AutomationSuite/src/test/java/Feature/invoiceValidation.feature:13)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:301)
+	at basicTemplate.browserSelector.setUp(browserSelector.java:34)
+	at stepdef.hooks.before(hooks.java:13)
 </textarea>
       
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdef.loginScreen.verifyRedirection()">
+                <span>Given User is redirected to the application's URL</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdef.manageInvoicesScreen.user_Try_To_Access_The_Invoice_Listing()">
+                <span>And User navigates to the Invoice listing page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdef.manageInvoicesScreen.the_user_initiates_the_creation_of_a_new_invoice()">
+                <span>When the User initiates the creation of a new invoice</span>
+      <div>Step skipped
       </div>
               </div>
               <div class="step skip-bg" title="stepdef.manageInvoicesScreen.the_user_should_be_able_to_successfully_create_a_new_invoice()">
                 <span>Then the User should be able to successfully create a new invoice</span>
       <div>Step skipped
+      </div>
+              </div>
+              <div class="step fail-bg" title="AFTER">
+                <span>stepdef.hooks.after()</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.monte.screenrecorder.ScreenRecorder.stop()" because "basicTemplate.myRecording.screenRecorder" is null
+	at basicTemplate.myRecording.stopRecording(myRecording.java:62)
+	at basicTemplate.recording.StopCapturing(recording.java:64)
+	at basicTemplate.browserSelector.tearDown(browserSelector.java:79)
+	at stepdef.hooks.after(hooks.java:18)
+</textarea>
+      
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="18"><span class="badge log fail-bg mr-2">Fail</span>Deleting invoice</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="BEFORE">
+                <span>stepdef.hooks.before()</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=124.0.6367.156)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9d59f4ed59fc62c077e8fce63e84e74d, get {url=https://uksestdevtest02.ukest.lan/eSight/Identity/Account/Login}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 124.0.6367.156, chrome: {chromedriverVersion: 124.0.6367.155 (df4f029328b..., userDataDir: C:\Users\NISHIT~1.SHE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58290}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58290/devtoo..., se:cdpVersion: 124.0.6367.156, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9d59f4ed59fc62c077e8fce63e84e74d
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:301)
+	at basicTemplate.browserSelector.setUp(browserSelector.java:34)
+	at stepdef.hooks.before(hooks.java:13)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdef.manageInvoicesScreen.user_Try_To_Access_The_Invoice_Listing()">
+                <span>Given User navigates to the Invoice listing page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdef.manageInvoicesScreen.theUSerInitiatesTheDeletionOfInvoice()">
+                <span>When the USer initiates the deletion of invoice</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdef.manageInvoicesScreen.theUserShouldBeAbleToSuccessfullyDeleteAInvoice()">
+                <span>Then the User should be able to successfully delete a invoice</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step fail-bg" title="AFTER">
+                <span>stepdef.hooks.after()</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.monte.screenrecorder.ScreenRecorder.stop()" because "basicTemplate.myRecording.screenRecorder" is null
+	at basicTemplate.myRecording.stopRecording(myRecording.java:62)
+	at basicTemplate.recording.StopCapturing(recording.java:64)
+	at basicTemplate.browserSelector.tearDown(browserSelector.java:79)
+	at stepdef.hooks.after(hooks.java:18)
+</textarea>
+      
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="25"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Validate User Redirection and Functionality in MRI Energy Web Application Login feature</p>
+            <p class="text-sm">
+              <span>11:22:57 AM</span> / <span>00:00:02:504</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Validate User Redirection and Functionality in MRI Energy Web Application Login feature</h5>
+<span class='badge badge-success'>05.09.2024 11:22:57 AM</span>
+<span class='badge badge-danger'>05.09.2024 11:22:59 AM</span>
+<span class='badge badge-default'>00:00:02:504</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=25</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="26"><span class="badge log fail-bg mr-2">Fail</span>Verify User is redirected to correct URL</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="BEFORE">
+                <span>stepdef.hooks.before()</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=124.0.6367.156)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4b5319c86453ef4465aac7a4b8e22532, get {url=https://uksestdevtest02.ukest.lan/eSight/Identity/Account/Login}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 124.0.6367.156, chrome: {chromedriverVersion: 124.0.6367.155 (df4f029328b..., userDataDir: C:\Users\NISHIT~1.SHE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58305}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58305/devtoo..., se:cdpVersion: 124.0.6367.156, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4b5319c86453ef4465aac7a4b8e22532
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:301)
+	at basicTemplate.browserSelector.setUp(browserSelector.java:34)
+	at stepdef.hooks.before(hooks.java:13)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdef.loginScreen.verifyURL()">
+                <span>Given Enter URL</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdef.loginScreen.verifyBrowser()">
+                <span>When Browser is Open</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdef.loginScreen.verifyRedirection()">
+                <span>Then User is redirected to the application's URL</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step fail-bg" title="AFTER">
+                <span>stepdef.hooks.after()</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.monte.screenrecorder.ScreenRecorder.stop()" because "basicTemplate.myRecording.screenRecorder" is null
+	at basicTemplate.myRecording.stopRecording(myRecording.java:62)
+	at basicTemplate.recording.StopCapturing(recording.java:64)
+	at basicTemplate.browserSelector.tearDown(browserSelector.java:79)
+	at stepdef.hooks.after(hooks.java:18)
+</textarea>
+      
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="33"><span class="badge log fail-bg mr-2">Fail</span>Verify User is able to access the MRI Energy application</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="BEFORE">
+                <span>stepdef.hooks.before()</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=124.0.6367.156)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [83277790ce890e10a0a7e8e92c8b0d68, get {url=https://uksestdevtest02.ukest.lan/eSight/Identity/Account/Login}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 124.0.6367.156, chrome: {chromedriverVersion: 124.0.6367.155 (df4f029328b..., userDataDir: C:\Users\NISHIT~1.SHE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58319}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58319/devtoo..., se:cdpVersion: 124.0.6367.156, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 83277790ce890e10a0a7e8e92c8b0d68
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:301)
+	at basicTemplate.browserSelector.setUp(browserSelector.java:34)
+	at stepdef.hooks.before(hooks.java:13)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdef.loginScreen.verifyRedirection()">
+                <span>Given User is redirected to the application's URL</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdef.loginScreen.userEnterTheValidCredentialsOfAdmin()">
+                <span>When User enter the valid credentials of admin</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdef.loginScreen.verifyUserShouldBeAbleToRedirectToHomePage()">
+                <span>Then Verify User should be able to redirect to HomePage</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step fail-bg" title="AFTER">
+                <span>stepdef.hooks.after()</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.monte.screenrecorder.ScreenRecorder.stop()" because "basicTemplate.myRecording.screenRecorder" is null
+	at basicTemplate.myRecording.stopRecording(myRecording.java:62)
+	at basicTemplate.recording.StopCapturing(recording.java:64)
+	at basicTemplate.browserSelector.tearDown(browserSelector.java:79)
+	at stepdef.hooks.after(hooks.java:18)
+</textarea>
+      
       </div>
               </div>
           </div>
@@ -397,14 +701,14 @@ Session ID: 37aeef874e318105054a29149784eb85
 <div class="test-list">
 <div class="test-list-tools">
 <ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">5</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>1</span>
+<span class='badge log badge-danger'>1</span>
 </span>
 <p class="name">@Priority=2</p>
 <p class="duration text-sm">1 tests</p>
@@ -412,7 +716,7 @@ Session ID: 37aeef874e318105054a29149784eb85
 <div class="test-contents d-none">
 <div class="info">
 <h4>@Priority=2</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -423,13 +727,85 @@ Session ID: 37aeef874e318105054a29149784eb85
 </tr>
 </thead>
 <tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>16:13:47 PM</td>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:22:52 AM</td>
 <td>
 <a href="#" class="linked" test-id='2' id='3'>Verify that user is able to access Invoice Validation</a>
 <div class="">
 <span class="badge badge-default">Validate User Redirection and Functionality in MRI Energy Web Application for Invoice Validation feature.Verify that user is able to access Invoice Validation</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@Priority=0</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Priority=0</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:22:57 AM</td>
+<td>
+<a href="#" class="linked" test-id='25' id='26'>Verify User is redirected to correct URL</a>
+<div class="">
+<span class="badge badge-default">Validate User Redirection and Functionality in MRI Energy Web Application Login feature.Verify User is redirected to correct URL</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@Priority=1</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Priority=1</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:22:58 AM</td>
+<td>
+<a href="#" class="linked" test-id='25' id='33'>Verify User is able to access the MRI Energy application</a>
+<div class="">
+<span class="badge badge-default">Validate User Redirection and Functionality in MRI Energy Web Application Login feature.Verify User is able to access the MRI Energy application</span>
 </div>
 </td>
 </tr>
@@ -461,11 +837,47 @@ Session ID: 37aeef874e318105054a29149784eb85
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>16:14:00 PM</td>
+<td>11:22:54 AM</td>
 <td>
 <a href="#" class="linked" test-id='2' id='10'>Creating a new invoice</a>
 <div class="">
 <span class="badge badge-default">Validate User Redirection and Functionality in MRI Energy Web Application for Invoice Validation feature.Creating a new invoice</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@Priority=4</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Priority=4</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:22:55 AM</td>
+<td>
+<a href="#" class="linked" test-id='2' id='18'>Deleting invoice</a>
+<div class="">
+<span class="badge badge-default">Validate User Redirection and Functionality in MRI Energy Web Application for Invoice Validation feature.Deleting invoice</span>
 </div>
 </td>
 </tr>
@@ -485,22 +897,22 @@ Session ID: 37aeef874e318105054a29149784eb85
 <div class="test-list">
 <div class="test-list-tools">
 <ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log badge-danger'>1</span>
+<span class='badge log badge-danger'>5</span>
 </span>
-<p class="name">org.openqa.selenium.InvalidArgumentException</p>
-<p class="duration text-sm">1 tests</p>
+<p class="name">org.openqa.selenium.WebDriverException</p>
+<p class="duration text-sm">5 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>org.openqa.selenium.InvalidArgumentException</h4>
-<span status="fail" class='badge log badge-danger'>1 failed</span>
+<h4>org.openqa.selenium.WebDriverException</h4>
+<span status="fail" class='badge log badge-danger'>5 failed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -513,11 +925,127 @@ Session ID: 37aeef874e318105054a29149784eb85
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>16:14:10 PM</td>
+<td>11:22:52 AM</td>
 <td>
-<a href="#" class="linked" test-id='2' id='14'>When the User initiates the creation of a new invoice</a>
+<a href="#" class="linked" test-id='2' id='4'>stepdef.hooks.before()</a>
 <div class="">
-<span class="badge badge-default">Validate User Redirection and Functionality in MRI Energy Web Application for Invoice Validation feature.Creating a new invoice.When the User initiates the creation of a new invoice</span>
+<span class="badge badge-default">Validate User Redirection and Functionality in MRI Energy Web Application for Invoice Validation feature.Verify that user is able to access Invoice Validation.stepdef.hooks.before()</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:22:54 AM</td>
+<td>
+<a href="#" class="linked" test-id='2' id='11'>stepdef.hooks.before()</a>
+<div class="">
+<span class="badge badge-default">Validate User Redirection and Functionality in MRI Energy Web Application for Invoice Validation feature.Creating a new invoice.stepdef.hooks.before()</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:22:55 AM</td>
+<td>
+<a href="#" class="linked" test-id='2' id='19'>stepdef.hooks.before()</a>
+<div class="">
+<span class="badge badge-default">Validate User Redirection and Functionality in MRI Energy Web Application for Invoice Validation feature.Deleting invoice.stepdef.hooks.before()</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:22:57 AM</td>
+<td>
+<a href="#" class="linked" test-id='25' id='27'>stepdef.hooks.before()</a>
+<div class="">
+<span class="badge badge-default">Validate User Redirection and Functionality in MRI Energy Web Application Login feature.Verify User is redirected to correct URL.stepdef.hooks.before()</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:22:58 AM</td>
+<td>
+<a href="#" class="linked" test-id='25' id='34'>stepdef.hooks.before()</a>
+<div class="">
+<span class="badge badge-default">Validate User Redirection and Functionality in MRI Energy Web Application Login feature.Verify User is able to access the MRI Energy application.stepdef.hooks.before()</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>5</span>
+</span>
+<p class="name">java.lang.NullPointerException</p>
+<p class="duration text-sm">5 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.lang.NullPointerException</h4>
+<span status="fail" class='badge log badge-danger'>5 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:22:54 AM</td>
+<td>
+<a href="#" class="linked" test-id='2' id='8'>stepdef.hooks.after()</a>
+<div class="">
+<span class="badge badge-default">Validate User Redirection and Functionality in MRI Energy Web Application for Invoice Validation feature.Verify that user is able to access Invoice Validation.stepdef.hooks.after()</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:22:55 AM</td>
+<td>
+<a href="#" class="linked" test-id='2' id='16'>stepdef.hooks.after()</a>
+<div class="">
+<span class="badge badge-default">Validate User Redirection and Functionality in MRI Energy Web Application for Invoice Validation feature.Creating a new invoice.stepdef.hooks.after()</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:22:56 AM</td>
+<td>
+<a href="#" class="linked" test-id='2' id='23'>stepdef.hooks.after()</a>
+<div class="">
+<span class="badge badge-default">Validate User Redirection and Functionality in MRI Energy Web Application for Invoice Validation feature.Deleting invoice.stepdef.hooks.after()</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:22:58 AM</td>
+<td>
+<a href="#" class="linked" test-id='25' id='31'>stepdef.hooks.after()</a>
+<div class="">
+<span class="badge badge-default">Validate User Redirection and Functionality in MRI Energy Web Application Login feature.Verify User is redirected to correct URL.stepdef.hooks.after()</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:22:59 AM</td>
+<td>
+<a href="#" class="linked" test-id='25' id='38'>stepdef.hooks.after()</a>
+<div class="">
+<span class="badge badge-default">Validate User Redirection and Functionality in MRI Energy Web Application Login feature.Verify User is able to access the MRI Energy application.stepdef.hooks.after()</span>
 </div>
 </td>
 </tr>

@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>MRIEnergy_AutomationSuite</groupId>
-    <artifactId>MRI Energy</artifactId>
+    <artifactId>MRI_Energy</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
     <properties>
@@ -127,7 +127,7 @@
                                 <goal>generate</goal>
                             </goals>
                             <configuration>
-                                <projectName>Amazon</projectName>
+                                <projectName>MRI Energy</projectName>
                                 <outputDirectory>${project.build.directory}/site/</outputDirectory>
                                 <cucumberOutput>${project.build.directory}/cucumber.json</cucumberOutput>
                             </configuration>
