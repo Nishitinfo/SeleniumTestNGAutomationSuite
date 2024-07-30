@@ -54,7 +54,7 @@ public class listener extends utils implements ITestListener {
         }
 
         try {
-            extentTest.get().addScreenCaptureFromPath(getScreenShotPath(result.getMethod().getMethodName()),result.getMethod().getMethodName());
+            extentTest.get().addScreenCaptureFromPath(getScreenShotPath(result.getMethod().getMethodName()), result.getMethod().getMethodName());
         } catch (IOException | AWTException e) {
             e.printStackTrace();
         }
