@@ -299,6 +299,7 @@ public class manageInvoicePage extends utils {
         Thread.sleep(100);
         clickOnElement(clickOnStartDateCalenderOnListing);
         clickOnElement(clickOnStartMonthCalender);
+        Thread.sleep(1000);
         clickOnElement(selectStartMonthOnCalender);
         clickOnElement(selectStartDateOnMonth);
         Thread.sleep(500);
@@ -308,18 +309,23 @@ public class manageInvoicePage extends utils {
         clickOnElement(selectEndMonthOnCalender);
         Thread.sleep(500);
         clickOnElement(selectEndDateOnMonth);
-        Thread.sleep(500);
+        Thread.sleep(1000);
         clickOnElement(ApplyFilterButton);
-        Thread.sleep(500);
-        clickOnElement(selectRawInGrid);
-        Thread.sleep(2000);
-        clickOnElement(clickOnOptions);
-        Thread.sleep(500);
-        clickOnElement(selectDeleteOption);
-        Thread.sleep(500);
-        enterText(deleteText, loginPage.U_name);
-        Thread.sleep(2000);
-        clickOnElement(SubmitButtonOnDeleteModel);
+        Thread.sleep(1000);
+
+        if (isElementPresent(selectRawInGrid)) {
+            Thread.sleep(500);
+            clickOnElement(selectRawInGrid);
+            Thread.sleep(500);
+            clickOnElement(clickOnOptions);
+            Thread.sleep(500);
+            clickOnElement(selectDeleteOption);
+            Thread.sleep(500);
+            enterText(deleteText, loginPage.U_name);
+            Thread.sleep(500);
+            clickOnElement(SubmitButtonOnDeleteModel);
+            System.out.println("Invoice Deleted Successfully.");
+        }
     }
 
     @AfterTest

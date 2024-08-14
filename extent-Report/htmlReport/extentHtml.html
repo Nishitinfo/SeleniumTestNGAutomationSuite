@@ -40,7 +40,6 @@
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
 			<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
-			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></a></li>
 		</ul>
 		<!-- report name -->
@@ -50,7 +49,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Jun 20, 2024 03:23:08 PM</span>
+			<span class='label blue darken-3 suite-start-time'>Aug 14, 2024 11:50:06 AM</span>
 			</a>
 		</ul>
 	</div>
@@ -66,7 +65,6 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
-					<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -78,9 +76,6 @@
 				<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
-					<li><a href='#'>@Priority=1</a></li>
-					<li><a href='#'>@Priority=2</a></li>
-					<li><a href='#'>@Priority=0</a></li>
 					<li><a href='#'>@Priority=4</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
@@ -123,12 +118,12 @@
                     <canvas id='parent-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='$50%'>
+                    <span class='tooltipped' data-position='top' data-tooltip='$100%'>
                     <span class='strong'>1</span> features passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='50%'>
-                    1</span> features failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    0</span> features failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> skipped
                 </div>
@@ -141,12 +136,12 @@
                     <canvas id='child-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='75%'>
-                    <span class='strong'>3</span> scenarios passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'>
+                    <span class='strong'>1</span> scenarios passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='25%'>
-                    1</span> scenarios failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    0</span> scenarios failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> skipped, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
@@ -161,14 +156,14 @@
                     <canvas id='grandchild-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='83%'>
-                    <span class='strong'>10</span> steps passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'>
+                    <span class='strong'>3</span> steps passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='8%'>
-                    1</span> steps failed, 
-                    <span class='strong tooltipped' data-position='top' data-tooltip='8%'>
-                    1</span> skipped, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    0</span> steps failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    0</span> skipped, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> others
                 </div>
@@ -189,11 +184,11 @@
 	<div class='subview-left left'>
 		<div class='view-summary'>
 			<ul id='test-collection' class='test-collection'>
-				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Validate User Redirection and Functionality in MRI Energy Web Application for Invoice Validation feature</span>
-						<span class='test-time'>Jun 20, 2024 03:23:09 PM</span>
-						<span class='test-status right fail'>Fail</span>
+						<span class='test-time'>Aug 14, 2024 11:50:07 AM</span>
+						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class="sr-filters bdd-filters">
@@ -205,39 +200,9 @@
 
 <div class='scenario node' test-id='2' status='pass'>
 
-	<span class='duration right label'>00 00 16.086</span>
+	<span class='duration right label'>00 01 08.147</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Verify that user is able to access Invoice Validation</div>
-	</div>
-	
-	
-		<div class='category-list'>
-				<span class='category label'>@Priority=2</span>
-		</div>
-	
-	<ul class='steps'>
-		<li test-id='4' class='node given Pass' status='Pass'>
-			<div class="step-name" title="(stepdef.loginScreen.verifyRedirection())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User is redirected to the application's URL</div>
-
-
-		</li>
-		<li test-id='5' class='node when Pass' status='Pass'>
-			<div class="step-name" title="(stepdef.manageInvoicesScreen.user_Try_To_Access_The_Invoice_Listing())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User navigates to the Invoice listing page</div>
-
-
-		</li>
-		<li test-id='6' class='node then Pass' status='Pass'>
-			<div class="step-name" title="(stepdef.manageInvoicesScreen.verify_That_User_Should_Be_Able_To_Access_The_Invoice_Validation())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Verify that user should be able to access the Invoice Validation</div>
-
-
-		</li>
-	</ul>
-</div>
-<div class='scenario node' test-id='8' status='fail'>
-
-	<span class='duration right label'>00 00 35.564</span>
-	<div class="bdd-test">
-		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario: Deleting invoice</div>
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Deleting invoice</div>
 	</div>
 	
 	
@@ -246,123 +211,18 @@
 		</div>
 	
 	<ul class='steps'>
-		<li test-id='10' class='node given Pass' status='Pass'>
+		<li test-id='4' class='node given Pass' status='Pass'>
 			<div class="step-name" title="(stepdef.manageInvoicesScreen.user_Try_To_Access_The_Invoice_Listing())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User navigates to the Invoice listing page</div>
 
 
 		</li>
-		<li test-id='11' class='node when Fail' status='Fail'>
-			<div class="step-name" title="(stepdef.manageInvoicesScreen.theUSerInitiatesTheDeletionOfInvoice())"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>When the USer initiates the deletion of invoice</div>
-
-
-					<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//tbody/tr[1]/td[1]/span[1]/span[1]/input[1]"}
-  (Session info: MicrosoftEdge=126.0.2592.56)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.18.1', revision: 'b1d3319b48'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [2f5af3f230080b5a3e4c540eb3e8cf6c, findElement {value=//tbody/tr[1]/td[1]/span[1]/span[1]/input[1], using=xpath}]
-Capabilities {acceptInsecureCerts: true, browserName: MicrosoftEdge, browserVersion: 126.0.2592.56, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:60659}, msedge: {msedgedriverVersion: 126.0.2592.61 (12efce1c0fb4..., userDataDir: C:\Users\NISHIT~1.SHE\AppDa...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60659/devtoo..., se:cdpVersion: 126.0.2592.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 2f5af3f230080b5a3e4c540eb3e8cf6c
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
-	at basicTemplate.utils.clickOnElement(utils.java:35)
-	at basicTemplate.pages.manageInvoicePage.deleteInvoice(manageInvoicePage.java:314)
-	at stepdef.manageInvoicesScreen.theUSerInitiatesTheDeletionOfInvoice(manageInvoicesScreen.java:49)
-	at ✽.the USer initiates the deletion of invoice(file:///C:/Users/Nishit.Sheth/IdeaProjects/MRIEnergy_AutomationSuite/src/test/java/feature/invoiceValidation.feature:19)
-</textarea>
-		</li>
-		<li test-id='12' class='node then Skip' status='Skip'>
-			<div class="step-name" title="(stepdef.manageInvoicesScreen.theUserShouldBeAbleToSuccessfullyDeleteAInvoice())"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>Then the User should be able to successfully delete a invoice</div>
-
-
-					<div class="node-step">Step skipped</div>
-		</li>
-	</ul>
-</div>
-					</div>
-				</li>
-				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='14'>
-					<div class='test-heading'>
-						<span class='test-name'>Validate User Redirection and Functionality in MRI Energy Web Application Login feature</span>
-						<span class='test-time'>Jun 20, 2024 03:24:01 PM</span>
-						<span class='test-status right pass'>Pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class="sr-filters bdd-filters">
-	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
-	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
-	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
-	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
-</div>
-
-<div class='scenario node' test-id='15' status='pass'>
-
-	<span class='duration right label'>00 00 08.619</span>
-	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Verify User is redirected to correct URL</div>
-	</div>
-	
-	
-		<div class='category-list'>
-				<span class='category label'>@Priority=0</span>
-		</div>
-	
-	<ul class='steps'>
-		<li test-id='17' class='node given Pass' status='Pass'>
-			<div class="step-name" title="(stepdef.loginScreen.verifyURL())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given Enter URL</div>
+		<li test-id='5' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(stepdef.manageInvoicesScreen.theUSerInitiatesTheDeletionOfInvoice())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the USer initiates the deletion of invoice</div>
 
 
 		</li>
-		<li test-id='18' class='node when Pass' status='Pass'>
-			<div class="step-name" title="(stepdef.loginScreen.verifyBrowser())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When Browser is Open</div>
-
-
-		</li>
-		<li test-id='19' class='node then Pass' status='Pass'>
-			<div class="step-name" title="(stepdef.loginScreen.verifyRedirection())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then User is redirected to the application's URL</div>
-
-
-		</li>
-	</ul>
-</div>
-<div class='scenario node' test-id='21' status='pass'>
-
-	<span class='duration right label'>00 00 10.792</span>
-	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Verify User is able to access the MRI Energy application</div>
-	</div>
-	
-	
-		<div class='category-list'>
-				<span class='category label'>@Priority=1</span>
-		</div>
-	
-	<ul class='steps'>
-		<li test-id='23' class='node given Pass' status='Pass'>
-			<div class="step-name" title="(stepdef.loginScreen.verifyRedirection())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User is redirected to the application's URL</div>
-
-
-		</li>
-		<li test-id='24' class='node when Pass' status='Pass'>
-			<div class="step-name" title="(stepdef.loginScreen.userEnterTheValidCredentialsOfAdmin())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User enter the valid credentials of admin</div>
-
-
-		</li>
-		<li test-id='25' class='node then Pass' status='Pass'>
-			<div class="step-name" title="(stepdef.loginScreen.verifyUserShouldBeAbleToRedirectToHomePage())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Verify User should be able to redirect to HomePage</div>
+		<li test-id='6' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(stepdef.manageInvoicesScreen.theUserShouldBeAbleToSuccessfullyDeleteAInvoice())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the User should be able to successfully delete a invoice</div>
 
 
 		</li>
@@ -412,114 +272,15 @@ Session ID: 2f5af3f230080b5a3e4c540eb3e8cf6c
 			<ul id='category-collection' class='category-collection'>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@Priority=1</span>
-						<span class='category-status right'>
-						<span class='label pass'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
-							
-							
-						</div>
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Jun 20, 2024 03:24:10 PM</td>
-										<td class='linked' test-id='21'>Verify User is able to access the MRI Energy application</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@Priority=2</span>
-						<span class='category-status right'>
-						<span class='label pass'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
-							
-							
-						</div>
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Jun 20, 2024 03:23:09 PM</td>
-										<td class='linked' test-id='2'>Verify that user is able to access Invoice Validation</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@Priority=0</span>
-						<span class='category-status right'>
-						<span class='label pass'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
-							
-							
-						</div>
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Jun 20, 2024 03:24:01 PM</td>
-										<td class='linked' test-id='15'>Verify User is redirected to correct URL</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
 						<span class='category-name'>@Priority=4</span>
 						<span class='category-status right'>
-						<span class='label fail'>1</span>
+						<span class='label pass'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
 							
-							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
 						<div class='category-tests'>
@@ -533,9 +294,9 @@ Session ID: 2f5af3f230080b5a3e4c540eb3e8cf6c
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jun 20, 2024 03:23:25 PM</td>
-										<td class='linked' test-id='8'>Deleting invoice</td>
-										<td><span class='test-status Fail'>Fail</span></td>
+										<td>Aug 14, 2024 11:50:07 AM</td>
+										<td class='linked' test-id='2'>Deleting invoice</td>
+										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -551,89 +312,7 @@ Session ID: 2f5af3f230080b5a3e4c540eb3e8cf6c
 		</div>
 	</div>
 </div>
-<!-- category view --><div id='exception-view' class='view hide'>
-	<section id='controls'>
-		<div class='controls grey lighten-4'>
-			<!-- search -->
-			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
-				<a href="#" class='search-div'>
-				<i class='material-icons'>search</i> Search
-				</a>
-				<div class='input-field left hide'>
-					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
-				</div>
-			</div>
-			<!-- search -->
-		</div>
-	</section>
-	<div class='subview-left left'>
-		<div class='view-summary'>
-			<ul id='exception-collection' class='exception-collection'>
-				<li class='exception displayed active'>
-					<div class='exception-heading'>
-						<span class='exception-name'>org.openqa.selenium.NoSuchElementException</span>
-						<span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
-					</div>
-					<div class='exception-content hide'>
-						<div class='exception-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>StackTrace</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Jun 20, 2024 03:23:39 PM</td>
-										<td class='linked' test-id='11'>When the USer initiates the deletion of invoice</td>
-										<td>
-											<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//tbody/tr[1]/td[1]/span[1]/span[1]/input[1]"}
-  (Session info: MicrosoftEdge=126.0.2592.56)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.18.1', revision: 'b1d3319b48'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [2f5af3f230080b5a3e4c540eb3e8cf6c, findElement {value=//tbody/tr[1]/td[1]/span[1]/span[1]/input[1], using=xpath}]
-Capabilities {acceptInsecureCerts: true, browserName: MicrosoftEdge, browserVersion: 126.0.2592.56, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:60659}, msedge: {msedgedriverVersion: 126.0.2592.61 (12efce1c0fb4..., userDataDir: C:\Users\NISHIT~1.SHE\AppDa...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60659/devtoo..., se:cdpVersion: 126.0.2592.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 2f5af3f230080b5a3e4c540eb3e8cf6c
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
-	at basicTemplate.utils.clickOnElement(utils.java:35)
-	at basicTemplate.pages.manageInvoicePage.deleteInvoice(manageInvoicePage.java:314)
-	at stepdef.manageInvoicesScreen.theUSerInitiatesTheDeletionOfInvoice(manageInvoicesScreen.java:49)
-	at ✽.the USer initiates the deletion of invoice(file:///C:/Users/Nishit.Sheth/IdeaProjects/MRIEnergy_AutomationSuite/src/test/java/feature/invoiceValidation.feature:19)
-</textarea>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-			</ul>
-		</div>
-	</div>
-	<div class='subview-right left'>
-		<div class='view-summary'>
-			<h5 class='exception-name'></h5>
-		</div>
-	</div>
-</div>
-<!-- exception view --><div id='dashboard-view' class='view hide'>
+<!-- category view --><div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
 		<h5>Dashboard</h5>
 
@@ -641,37 +320,37 @@ Session ID: 2f5af3f230080b5a3e4c540eb3e8cf6c
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Features
-					<div class='panel-lead'>2</div>
+					<div class='panel-lead'>1</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Scenarios
-					<div class='panel-lead'>4</div>
+					<div class='panel-lead'>1</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>12</div>
+					<div class='panel-lead'>3</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Jun 20, 2024 03:23:08 PM</div>
+					<div class='panel-lead'>Aug 14, 2024 11:50:06 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Jun 20, 2024 03:24:20 PM</div>
+			 		<div class='panel-lead'>Aug 14, 2024 11:51:16 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>00 01 12.047</div>
+					<div class='panel-lead'>00 01 09.187</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -715,39 +394,12 @@ Session ID: 2f5af3f230080b5a3e4c540eb3e8cf6c
 							<th>Passed %</th>
 						</tr>
 						<tr>
-							<td>@Priority=1</td>
-							<td>1</td>
-							<td>0</td>
-							<td>0</td>
-							<td>
-									100%
-							</td>
-						</tr>
-						<tr>
-							<td>@Priority=2</td>
-							<td>1</td>
-							<td>0</td>
-							<td>0</td>
-							<td>
-									100%
-							</td>
-						</tr>
-						<tr>
-							<td>@Priority=0</td>
-							<td>1</td>
-							<td>0</td>
-							<td>0</td>
-							<td>
-									100%
-							</td>
-						</tr>
-						<tr>
 							<td>@Priority=4</td>
-							<td>0</td>
 							<td>1</td>
 							<td>0</td>
+							<td>0</td>
 							<td>
-									0%
+									100%
 							</td>
 						</tr>
 					</table>
@@ -761,35 +413,35 @@ Session ID: 2f5af3f230080b5a3e4c540eb3e8cf6c
 		<!-- container -->
 		<script>
 			var statusGroup = {
-                parentCount: 2,
+                parentCount: 1,
 				passParent: 1,
-				failParent: 1,
+				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				childCount: 4,
-				passChild: 3,
-				failChild: 1,
+				childCount: 1,
+				passChild: 1,
+				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				grandChildCount: 12,
-				passGrandChild: 10,
-				failGrandChild: 1,
+				grandChildCount: 3,
+				passGrandChild: 3,
+				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
-				skipGrandChild: 1,
+				skipGrandChild: 0,
 				infoGrandChild: 0,
 			};
 			</script>
 		
 		<script>
 			var timeline = {
-			        "Validate User Redirection and Functionality in MRI Energy Web Application for Invoice Validation feature":51.661,"Validate User Redirection and Functionality in MRI Energy Web Application Login feature":19.417
+			        "Validate User Redirection and Functionality in MRI Energy Web Application for Invoice Validation feature":68.15
 			};
 		</script>
 		

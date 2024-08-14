@@ -126,7 +126,7 @@ public class browserSelector extends baseClass {
             options.setAcceptInsecureCerts(true);
             options.addArguments("--remote-allow-origins=*");
             options.addArguments("headless");
-//            driver = new EdgeDriver(options);
+            driver = new EdgeDriver(options);
             driver.get(URL);
             driver.manage().deleteAllCookies();
             driver.manage().window().maximize();
