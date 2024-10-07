@@ -6,7 +6,7 @@ import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
         features = {"src/test/java/feature"},
-        glue = {"stepdef"},
+        glue = {"stepdef", "hooks"},
         plugin = {"pretty", "json:target/json-report/cucumber.json",
                 "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",},
         publish = true)

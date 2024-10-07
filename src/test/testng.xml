@@ -1,45 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="All Test Suite" parallel="classes">
+<suite name="MRI Energy Testng XML Test Suite">
     <listeners>
-        <listener class-name="basicTemplate.listener">
+        <listener class-name="basicTemplate.configs.listener">
         </listener>
     </listeners>
 
-    <!--//Cross Browser with Single Test //-->
-    <test name="Cross Browser Tests using edge" parallel="classes">
-        <parameter name="Browser" value="edge"/>
-        <classes>
-            <class name="basicTemplate.pages.loginPage"/>
-        </classes>
-    </test>
-    <test name="Cross Browser Tests using chrome" parallel="classes">
-        <parameter name="Browser" value="chrome"/>
-        <classes>
-            <class name="basicTemplate.pages.loginPage"/>
-        </classes>
-    </test>
+    <!--   Method Runner-->
+        <test name="Login Smoke Test Execution ">
+            <parameter name="Browser" value="chrome"/>
+            <classes>
+                <class name="basicTemplate.pages.login"/>
+            </classes>
+        </test>
 
-    <!--    //Parallel runner Tests using chrome//-->
-    <test name="Parallel runner Tests using chrome" parallel="classes">
+    <!--   Tests Runner-->
+    <test name="Test Execution with Runner">
         <parameter name="Browser" value="chrome"/>
         <classes>
             <class name="runner.testRunner"/>
         </classes>
     </test>
 
-    <!--        <test name="Parallel Tests using edge with Runner" parallel="classes">-->
-    <!--            <parameter name="Browser" value="edge"/>-->
-<!--        <classes>-->
-    <!--                <class name="runner.testRunner"/>-->
-<!--        </classes>-->
-<!--    </test>-->
 
-<!--    <test name="Parallel Tests using safari" parallel="classes">-->
-    <!--            <parameter name="Browser" value="safari"/>-->
-<!--        <classes>-->
-    <!--                <class name="basicTemplate.pages.loginPage"/>-->
-<!--        </classes>-->
-<!--    </test>-->
 </suite>
