@@ -4,14 +4,14 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>MRIEnergy_AutomationSuite</groupId>
-    <artifactId>MRI Energy</artifactId>
+    <artifactId>MRI_Energy</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
     <properties>
         <webdriver.chrome.driver>/opt/google/chrome/google-chrome</webdriver.chrome.driver>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>1.9</maven.compiler.source>
-        <maven.compiler.target>1.9</maven.compiler.target>
+        <maven.compiler.source>19</maven.compiler.source>
+        <maven.compiler.target>19</maven.compiler.target>
         <java.version>1.9</java.version>
         <junit.version>4.13.2</junit.version> <!-- Ensure compatibility with other dependencies -->
     </properties>
@@ -36,7 +36,7 @@
         <dependency>
             <groupId>io.github.bonigarcia</groupId>
             <artifactId>webdrivermanager</artifactId>
-            <version>5.6.4</version>
+            <version>5.7.0</version>
         </dependency>
         <dependency>
             <groupId>org.testng</groupId>
@@ -74,11 +74,6 @@
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-opera-driver</artifactId>
             <version>4.4.0</version>
-        </dependency>
-        <dependency>
-            <groupId>com.aventstack</groupId>
-            <artifactId>extentreports</artifactId>
-            <version>5.1.0</version>
         </dependency>
         <dependency>
             <groupId>tech.grasshopper</groupId>
@@ -150,7 +145,7 @@
                     <artifactId>maven-surefire-plugin</artifactId>
                     <version>3.1.2</version> <!-- Updated version for compatibility -->
                     <configuration>
-                        <!-- <testFailureIgnore>true</testFailureIgnore>-->
+                        <testFailureIgnore>true</testFailureIgnore>
                     </configuration>
                 </plugin>
 

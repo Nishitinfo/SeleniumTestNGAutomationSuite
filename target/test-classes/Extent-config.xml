@@ -15,12 +15,12 @@
 
         <!-- defaults to https -->
 
-        <protocol>http</protocol>
+        <protocol>https</protocol>
         <!-- title of the document -->
-        <documentTitle>Extent</documentTitle>
+        <documentTitle>MRI Energy Cucumber Test Report</documentTitle>
         <!-- report name - displayed at top-nav -->
 
-        <reportName>Cucumber Report</reportName>
+        <reportName>MRI Energy Cucumber Report</reportName>
         <!-- location of charts in the test view -->
 
         <!-- top, bottom -->
@@ -31,6 +31,7 @@
         <scripts>
 
             <![CDATA[
+            <img src='C:\QA_Resources\Automation Projects\AutomationScripts\Selenium+Java\MRIEnergy_AutomationSuite\src\test\resources\attachments\mri_energy_logo.png' />
 $(document).ready(function() {
 });
 ]]>
@@ -40,6 +41,8 @@ $(document).ready(function() {
             <![CDATA[
 ]]>
         </styles>
+
+
     </configuration>
 </extentreports>
 
