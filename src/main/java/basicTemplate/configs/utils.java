@@ -273,7 +273,7 @@ public class utils extends base {
         String path = "";
         boolean isDelete = Boolean.parseBoolean(loadProps.getProperty("RemoveOldReports"));
         /*UpdatingVersionFile*/
-        String systemVersion = get_Text(By.xpath("/html/body/div/div[2]/div[1]/div[1]"));
+        String systemVersion = get_Text(By.xpath("/html/body/div/footer/div[1]/div[1]"));
         path = systemVersion.replaceAll("[()-+.^:,. ]", "");
         System.out.println("Visible text: " + systemVersion + ": " + path);
         Path reportPath = Paths.get(System.getProperty("user.dir") + "/MRITestExecutionReports/", path);

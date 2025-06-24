@@ -53,6 +53,13 @@
             <artifactId>monte-screen-recorder</artifactId>
             <version>0.7.7.0</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/io.restassured/rest-assured -->
+        <!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>rest-assured</artifactId>
+            <version>5.5.5</version>
+        </dependency>
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-testng</artifactId>
@@ -124,7 +131,7 @@
                             <configuration>
                                 <projectName>MRI Energy</projectName>
                                 <outputDirectory>${project.build.directory}/site/</outputDirectory>
-                                <cucumberOutput>${project.build.directory}/cucumber.json</cucumberOutput>
+
                             </configuration>
                         </execution>
                     </executions>

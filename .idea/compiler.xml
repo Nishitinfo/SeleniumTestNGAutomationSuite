@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="MRIEnergy_AutomationSuite" />
+        <module name="Basic_Template" />
         <module name="MRI Energy" />
       </profile>
     </annotationProcessing>

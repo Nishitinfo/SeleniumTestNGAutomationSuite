@@ -3,7 +3,7 @@
 
 <suite name="MRI Energy Testng XML Test Suite">
     <listeners>
-        <listener class-name="basicTemplate.configs.listener">
+        <listener class-name="listners.listener">
         </listener>
     </listeners>
 
@@ -16,12 +16,12 @@
         </test>
 
     <!--   Tests Runner-->
-    <test name="Test Execution with Runner">
-        <parameter name="Browser" value="chrome"/>
-        <classes>
-            <class name="runner.testRunner"/>
-        </classes>
-    </test>
+<!--    <test name="Test Execution with Runner">-->
+<!--        <parameter name="Browser" value="chrome"/>-->
+<!--        <classes>-->
+<!--            <class name="runner.testRunner"/>-->
+<!--        </classes>-->
+<!--    </test>-->
 
 
 </suite>

@@ -52,6 +52,15 @@ public class login extends utils {
         clickOnElement(SignInButtosn);
 
     }
+    @Test
+    public static void Failed_login2() {
+        clickOnElement(username);
+        enterText(username, U_name);
+        clickOnElement(password);
+        enterText(password, P_word);
+        clickOnElement(SignInButtosn);
+
+    }
 
     public static void logout() {
         if (isElementPresent(logoutButton)) {
