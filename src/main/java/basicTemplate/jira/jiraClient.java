@@ -13,13 +13,13 @@ import java.util.Map;
 public class jiraClient {
 
     private static String getAuthHeader() {
-        String auth = jiraConfig.EMAIL + ":" + jiraConfig.API_TOKEN;
+        String auth = jiraConfig.EMAIL + ":" + jiraConfig.TOKEN;
         return "Basic " + Base64.getEncoder().encodeToString(auth.getBytes());
     }
 
     public static void handleTestCaseResultSmart(String issueKey, String summary, String descriptionText, File attachmentFile, boolean isFailed) {
         String passCommentText = loadProps.getProperty("PassComment") + " Version 21 Build 09";
-        String failCommentText = loadProps.getProperty("FailComment") + " Version 21 Build 09";
+        String failCommentText = loadProps.getProperty("FailedComment") + " Version 21 Build 09";
         // Step 1: Check if issue exists
         Response checkResponse = RestAssured
                 .given()
